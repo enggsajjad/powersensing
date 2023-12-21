@@ -1,0 +1,262 @@
+[0.000000] (-) TimerEvent: {}
+[0.000303] (-) JobUnselected: {'identifier': 'custom_msg'}
+[0.000366] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.000486] (-) JobUnselected: {'identifier': 'pub_sub_custom_msg'}
+[0.000591] (-) JobUnselected: {'identifier': 'pub_sub_custom_msg1'}
+[0.000654] (-) JobUnselected: {'identifier': 'ros2_msg'}
+[0.000753] (-) JobUnselected: {'identifier': 'serial_imu'}
+[0.000813] (-) JobUnselected: {'identifier': 'serial_imu'}
+[0.000941] (-) JobUnselected: {'identifier': 'serial_imu'}
+[0.001000] (-) JobUnselected: {'identifier': 'serial_imu1'}
+[0.001105] (-) JobUnselected: {'identifier': 'serial_test'}
+[0.001164] (custom_msg1) JobQueued: {'identifier': 'custom_msg1', 'dependencies': OrderedDict()}
+[0.001216] (custom_msg1) JobStarted: {'identifier': 'custom_msg1'}
+[0.098279] (custom_msg1) JobProgress: {'identifier': 'custom_msg1', 'progress': 'cmake'}
+[0.098920] (-) TimerEvent: {}
+[0.099378] (custom_msg1) JobProgress: {'identifier': 'custom_msg1', 'progress': 'build'}
+[0.100735] (custom_msg1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1', '--', '-j4', '-l4'], 'cwd': '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sajjad'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('PICO_EXTRAS_PATH', '/home/sajjad/pico/pico-extras'), ('HOME', '/home/sajjad'), ('OLDPWD', '/home/sajjad/Downloads/demo_ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sajjad'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sajjad'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sajjad/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/i80pc108:@/tmp/.ICE-unix/1351,unix/i80pc108:/tmp/.ICE-unix/1351'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/77c1e3b0_ceee_4d8c_b669_5f963e505e8a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YN6DD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.387'), ('PICO_EXAMPLES_PATH', '/home/sajjad/pico/pico-examples'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_test:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/sajjad/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_PLAYGROUND_PATH', '/home/sajjad/pico/pico-playground'), ('PYTHONPATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_test:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg:/opt/ros/humble')]), 'shell': False}
+[0.137920] (custom_msg1) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199036] (-) TimerEvent: {}
+[0.299433] (-) TimerEvent: {}
+[0.323169] (custom_msg1) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.326974] (custom_msg1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.330744] (custom_msg1) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.370294] (custom_msg1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399577] (-) TimerEvent: {}
+[0.499922] (-) TimerEvent: {}
+[0.600210] (-) TimerEvent: {}
+[0.700571] (-) TimerEvent: {}
+[0.737529] (custom_msg1) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.800684] (-) TimerEvent: {}
+[0.901129] (-) TimerEvent: {}
+[0.970519] (custom_msg1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.001268] (-) TimerEvent: {}
+[1.101588] (-) TimerEvent: {}
+[1.201878] (-) TimerEvent: {}
+[1.279161] (custom_msg1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.302018] (-) TimerEvent: {}
+[1.308912] (custom_msg1) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.339167] (custom_msg1) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.339351] (custom_msg1) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.339435] (custom_msg1) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.362942] (custom_msg1) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.400480] (custom_msg1) StdoutLine: {'line': b'-- Generating done\n'}
+[1.402113] (-) TimerEvent: {}
+[1.405760] (custom_msg1) StdoutLine: {'line': b'-- Build files have been written to: /home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1\n'}
+[1.442713] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_generator_c\x1b[0m\n'}
+[1.456759] (custom_msg1) StdoutLine: {'line': b'[  3%] Built target custom_msg1__cpp\n'}
+[1.466500] (custom_msg1) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/custom_msg1__rosidl_generator_c.dir/rosidl_generator_c/custom_msg1/msg/detail/log_tf__functions.c.o\x1b[0m\n'}
+[1.477472] (custom_msg1) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_custom_msg1\n'}
+[1.477787] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.478030] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.499761] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.502232] (-) TimerEvent: {}
+[1.503511] (custom_msg1) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg1__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msg1/msg/detail/dds_fastrtps/log_tf__type_support.cpp.o\x1b[0m\n'}
+[1.503846] (custom_msg1) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg1__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msg1/msg/detail/log_tf__type_support.cpp.o\x1b[0m\n'}
+[1.526686] (custom_msg1) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg1__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msg1/msg/log_tf__type_support.cpp.o\x1b[0m\n'}
+[1.576000] (custom_msg1) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libcustom_msg1__rosidl_generator_c.so\x1b[0m\n'}
+[1.602354] (-) TimerEvent: {}
+[1.650899] (custom_msg1) StdoutLine: {'line': b'[ 22%] Built target custom_msg1__rosidl_generator_c\n'}
+[1.702460] (-) TimerEvent: {}
+[1.802913] (-) TimerEvent: {}
+[1.903382] (-) TimerEvent: {}
+[2.003851] (-) TimerEvent: {}
+[2.083434] (custom_msg1) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg1__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.103961] (-) TimerEvent: {}
+[2.173380] (custom_msg1) StdoutLine: {'line': b'[ 29%] Built target custom_msg1__rosidl_typesupport_cpp\n'}
+[2.196186] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.204076] (-) TimerEvent: {}
+[2.223601] (custom_msg1) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg1__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msg1/msg/detail/log_tf__type_support_c.cpp.o\x1b[0m\n'}
+[2.304188] (-) TimerEvent: {}
+[2.311484] (custom_msg1) StdoutLine: {'line': b'running egg_info\n'}
+[2.315555] (custom_msg1) StdoutLine: {'line': b'writing custom_msg1.egg-info/PKG-INFO\n'}
+[2.315777] (custom_msg1) StdoutLine: {'line': b'writing dependency_links to custom_msg1.egg-info/dependency_links.txt\n'}
+[2.315935] (custom_msg1) StdoutLine: {'line': b'writing top-level names to custom_msg1.egg-info/top_level.txt\n'}
+[2.320050] (custom_msg1) StdoutLine: {'line': b"reading manifest file 'custom_msg1.egg-info/SOURCES.txt'\n"}
+[2.321194] (custom_msg1) StdoutLine: {'line': b"writing manifest file 'custom_msg1.egg-info/SOURCES.txt'\n"}
+[2.343000] (custom_msg1) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg1__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.378675] (custom_msg1) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg1__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.379863] (custom_msg1) StdoutLine: {'line': b'[ 38%] Built target ament_cmake_python_build_custom_msg1_egg\n'}
+[2.402885] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.404308] (-) TimerEvent: {}
+[2.428715] (custom_msg1) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/custom_msg1__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msg1/msg/detail/log_tf__type_support.c.o\x1b[0m\n'}
+[2.491746] (custom_msg1) StdoutLine: {'line': b'[ 45%] Built target custom_msg1__rosidl_typesupport_introspection_cpp\n'}
+[2.504425] (-) TimerEvent: {}
+[2.513267] (custom_msg1) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libcustom_msg1__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.514472] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_c\x1b[0m\n'}
+[2.538968] (custom_msg1) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg1__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msg1/msg/log_tf__type_support.cpp.o\x1b[0m\n'}
+[2.567662] (custom_msg1) StdoutLine: {'line': b'[ 54%] Built target custom_msg1__rosidl_typesupport_fastrtps_cpp\n'}
+[2.577967] (custom_msg1) StdoutLine: {'line': b'[ 58%] Built target custom_msg1__rosidl_typesupport_introspection_c\n'}
+[2.596066] (custom_msg1) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg1__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.604558] (-) TimerEvent: {}
+[2.656985] (custom_msg1) StdoutLine: {'line': b'[ 64%] Built target custom_msg1__rosidl_typesupport_c\n'}
+[2.704711] (-) TimerEvent: {}
+[2.805091] (-) TimerEvent: {}
+[2.813023] (custom_msg1) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg1__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.905197] (-) TimerEvent: {}
+[2.922416] (custom_msg1) StdoutLine: {'line': b'[ 70%] Built target custom_msg1__rosidl_typesupport_fastrtps_c\n'}
+[2.953611] (custom_msg1) StdoutLine: {'line': b'[ 70%] Built target custom_msg1\n'}
+[2.983334] (custom_msg1) StdoutLine: {'line': b'[ 74%] Built target custom_msg1__py\n'}
+[2.998403] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_generator_py\x1b[0m\n'}
+[3.005311] (-) TimerEvent: {}
+[3.017634] (custom_msg1) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/custom_msg1__rosidl_generator_py.dir/rosidl_generator_py/custom_msg1/msg/_log_tf_s.c.o\x1b[0m\n'}
+[3.105438] (-) TimerEvent: {}
+[3.147411] (custom_msg1) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msg1/libcustom_msg1__rosidl_generator_py.so\x1b[0m\n'}
+[3.202740] (custom_msg1) StdoutLine: {'line': b'[ 80%] Built target custom_msg1__rosidl_generator_py\n'}
+[3.205538] (-) TimerEvent: {}
+[3.218647] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.222891] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.223121] (custom_msg1) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msg1__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.239939] (custom_msg1) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/custom_msg1__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.247565] (custom_msg1) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_msg1__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.251751] (custom_msg1) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_msg1__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.305667] (-) TimerEvent: {}
+[3.369998] (custom_msg1) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msg1/custom_msg1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.405898] (-) TimerEvent: {}
+[3.418361] (custom_msg1) StdoutLine: {'line': b'[ 93%] Built target custom_msg1__rosidl_typesupport_c__pyext\n'}
+[3.433615] (custom_msg1) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msg1/custom_msg1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.447226] (custom_msg1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msg1/custom_msg1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.483469] (custom_msg1) StdoutLine: {'line': b'[100%] Built target custom_msg1__rosidl_typesupport_introspection_c__pyext\n'}
+[3.496219] (custom_msg1) StdoutLine: {'line': b'[100%] Built target custom_msg1__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.506000] (-) TimerEvent: {}
+[3.513062] (custom_msg1) CommandEnded: {'returncode': 0}
+[3.606099] (-) TimerEvent: {}
+[3.616163] (custom_msg1) JobProgress: {'identifier': 'custom_msg1', 'progress': 'install'}
+[3.628792] (custom_msg1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1'], 'cwd': '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sajjad'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('PICO_EXTRAS_PATH', '/home/sajjad/pico/pico-extras'), ('HOME', '/home/sajjad'), ('OLDPWD', '/home/sajjad/Downloads/demo_ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sajjad'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sajjad'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sajjad/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/i80pc108:@/tmp/.ICE-unix/1351,unix/i80pc108:/tmp/.ICE-unix/1351'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/77c1e3b0_ceee_4d8c_b669_5f963e505e8a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YN6DD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.387'), ('PICO_EXAMPLES_PATH', '/home/sajjad/pico/pico-examples'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_test:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/sajjad/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_PLAYGROUND_PATH', '/home/sajjad/pico/pico-playground'), ('PYTHONPATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_test:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg:/opt/ros/humble')]), 'shell': False}
+[3.641203] (custom_msg1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.641544] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/ament_index/resource_index/rosidl_interfaces/custom_msg1\n'}
+[3.641923] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1\n'}
+[3.642145] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg\n'}
+[3.642317] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/log_tf.h\n'}
+[3.642534] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail\n'}
+[3.642720] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__functions.h\n'}
+[3.642920] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__struct.h\n'}
+[3.643343] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__functions.c\n'}
+[3.643582] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__type_support.h\n'}
+[3.643812] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.644004] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/library_path.sh\n'}
+[3.644176] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/library_path.dsv\n'}
+[3.644417] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_generator_c.so\n'}
+[3.644661] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_generator_c.so" to ""\n'}
+[3.644858] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1\n'}
+[3.645051] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg\n'}
+[3.645249] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail\n'}
+[3.645425] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__rosidl_typesupport_fastrtps_c.h\n'}
+[3.645617] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.645796] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_fastrtps_c.so\n'}
+[3.646096] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.646501] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1\n'}
+[3.646645] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg\n'}
+[3.646774] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.646910] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail\n'}
+[3.647041] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__rosidl_typesupport_introspection_c.h\n'}
+[3.647173] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__type_support.c\n'}
+[3.647355] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_introspection_c.so\n'}
+[3.647619] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.647951] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_c.so\n'}
+[3.648604] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_c.so" to ""\n'}
+[3.648774] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1\n'}
+[3.649000] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg\n'}
+[3.649241] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail\n'}
+[3.649384] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__traits.hpp\n'}
+[3.649521] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__struct.hpp\n'}
+[3.649651] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__builder.hpp\n'}
+[3.649779] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/log_tf.hpp\n'}
+[3.649959] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1\n'}
+[3.650152] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg\n'}
+[3.650282] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail\n'}
+[3.650402] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.650523] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/dds_fastrtps\n'}
+[3.650652] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.650793] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.650934] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.651114] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1\n'}
+[3.651241] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg\n'}
+[3.651421] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail\n'}
+[3.651549] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.651674] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__type_support.cpp\n'}
+[3.651850] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_introspection_cpp.so\n'}
+[3.652270] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.652616] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_cpp.so\n'}
+[3.653261] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_cpp.so" to ""\n'}
+[3.653402] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/pythonpath.sh\n'}
+[3.653529] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/pythonpath.dsv\n'}
+[3.653716] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info\n'}
+[3.653888] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.654065] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.654282] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.654499] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.654797] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1\n'}
+[3.655007] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.655205] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_c.c\n'}
+[3.655393] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.655546] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.655753] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.655875] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.655993] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/libcustom_msg1__rosidl_generator_py.so\n'}
+[3.656181] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg\n'}
+[3.656313] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/_log_tf_s.c\n'}
+[3.656431] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/_log_tf.py\n'}
+[3.656548] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/__init__.py\n'}
+[3.656667] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/__init__.py\n'}
+[3.699899] (custom_msg1) StdoutLine: {'line': b"Listing '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1'...\n"}
+[3.700140] (custom_msg1) StdoutLine: {'line': b"Compiling '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/__init__.py'...\n"}
+[3.700236] (custom_msg1) StdoutLine: {'line': b"Listing '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg'...\n"}
+[3.700313] (custom_msg1) StdoutLine: {'line': b"Compiling '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/__init__.py'...\n"}
+[3.700385] (custom_msg1) StdoutLine: {'line': b"Compiling '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/_log_tf.py'...\n"}
+[3.706219] (-) TimerEvent: {}
+[3.706521] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.707029] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.707492] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.708230] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.708696] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.709358] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.709709] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_generator_py.so\n'}
+[3.710410] (custom_msg1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_generator_py.so" to ""\n'}
+[3.710638] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/msg/LogTf.idl\n'}
+[3.710872] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/msg/LogTf.msg\n'}
+[3.711060] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/ament_index/resource_index/package_run_dependencies/custom_msg1\n'}
+[3.711224] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/ament_index/resource_index/parent_prefix_path/custom_msg1\n'}
+[3.711431] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/ament_prefix_path.sh\n'}
+[3.711604] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/ament_prefix_path.dsv\n'}
+[3.711779] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/path.sh\n'}
+[3.712001] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/path.dsv\n'}
+[3.712239] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/local_setup.bash\n'}
+[3.712511] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/local_setup.sh\n'}
+[3.712762] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/local_setup.zsh\n'}
+[3.713000] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/local_setup.dsv\n'}
+[3.713305] (custom_msg1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/package.dsv\n'}
+[3.713502] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/ament_index/resource_index/packages/custom_msg1\n'}
+[3.713733] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_cExport.cmake\n'}
+[3.713920] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.714188] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.714465] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.714647] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.714850] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.715022] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_cExport.cmake\n'}
+[3.715218] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.715375] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_cppExport.cmake\n'}
+[3.715609] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.715818] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.715990] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.716207] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.716406] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_cppExport.cmake\n'}
+[3.716651] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.716904] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_pyExport.cmake\n'}
+[3.717138] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.717306] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/rosidl_cmake-extras.cmake\n'}
+[3.717433] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.717611] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.717761] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.717889] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.718019] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.718164] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.718323] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1Config.cmake\n'}
+[3.718458] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1Config-version.cmake\n'}
+[3.718610] (custom_msg1) StdoutLine: {'line': b'-- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/package.xml\n'}
+[3.720361] (custom_msg1) CommandEnded: {'returncode': 0}
+[3.806434] (-) TimerEvent: {}
+[3.907222] (-) TimerEvent: {}
+[4.007741] (-) TimerEvent: {}
+[4.074261] (custom_msg1) JobEnded: {'identifier': 'custom_msg1', 'rc': 0}
+[4.075397] (-) EventReactorShutdown: {}

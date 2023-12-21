@@ -1,0 +1,156 @@
+[0.102s] Invoking command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1 -- -j4 -l4
+[0.176s] [  3%] Built target custom_msg1__cpp
+[0.181s] [ 12%] Built target custom_msg1__rosidl_generator_c
+[0.202s] [ 12%] Built target ament_cmake_python_copy_custom_msg1
+[0.221s] [ 22%] Built target custom_msg1__rosidl_typesupport_introspection_cpp
+[0.221s] [ 32%] Built target custom_msg1__rosidl_typesupport_cpp
+[0.228s] [ 41%] Built target custom_msg1__rosidl_typesupport_fastrtps_cpp
+[0.250s] [ 51%] Built target custom_msg1__rosidl_typesupport_fastrtps_c
+[0.264s] [ 61%] Built target custom_msg1__rosidl_typesupport_c
+[0.265s] [ 70%] Built target custom_msg1__rosidl_typesupport_introspection_c
+[0.294s] [ 70%] Built target custom_msg1
+[0.323s] [ 74%] Built target custom_msg1__py
+[0.356s] [ 80%] Built target custom_msg1__rosidl_generator_py
+[0.405s] [ 93%] Built target custom_msg1__rosidl_typesupport_fastrtps_c__pyext
+[0.405s] [ 93%] Built target custom_msg1__rosidl_typesupport_introspection_c__pyext
+[0.409s] [100%] Built target custom_msg1__rosidl_typesupport_c__pyext
+[0.614s] running egg_info
+[0.616s] writing custom_msg1.egg-info/PKG-INFO
+[0.617s] writing dependency_links to custom_msg1.egg-info/dependency_links.txt
+[0.617s] writing top-level names to custom_msg1.egg-info/top_level.txt
+[0.620s] reading manifest file 'custom_msg1.egg-info/SOURCES.txt'
+[0.621s] writing manifest file 'custom_msg1.egg-info/SOURCES.txt'
+[0.660s] [100%] Built target ament_cmake_python_build_custom_msg1_egg
+[0.676s] Invoked command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1 -- -j4 -l4
+[0.787s] Invoking command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1
+[0.798s] -- Install configuration: ""
+[0.798s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/ament_index/resource_index/rosidl_interfaces/custom_msg1
+[0.799s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1
+[0.799s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg
+[0.800s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/log_tf.h
+[0.800s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail
+[0.800s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__functions.h
+[0.800s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__struct.h
+[0.801s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__functions.c
+[0.801s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__type_support.h
+[0.801s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/rosidl_generator_c__visibility_control.h
+[0.801s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/library_path.sh
+[0.801s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/library_path.dsv
+[0.802s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_generator_c.so
+[0.803s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_generator_c.so" to ""
+[0.803s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1
+[0.803s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg
+[0.803s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail
+[0.803s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__rosidl_typesupport_fastrtps_c.h
+[0.803s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.804s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_fastrtps_c.so
+[0.804s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_fastrtps_c.so" to ""
+[0.804s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1
+[0.804s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg
+[0.804s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.804s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail
+[0.805s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__rosidl_typesupport_introspection_c.h
+[0.805s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__type_support.c
+[0.805s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_introspection_c.so
+[0.805s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_introspection_c.so" to ""
+[0.806s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_c.so
+[0.806s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_c.so" to ""
+[0.806s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1
+[0.806s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg
+[0.807s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail
+[0.807s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__traits.hpp
+[0.807s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__struct.hpp
+[0.807s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__builder.hpp
+[0.807s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/log_tf.hpp
+[0.807s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1
+[0.808s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg
+[0.808s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail
+[0.808s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__rosidl_typesupport_fastrtps_cpp.hpp
+[0.808s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/dds_fastrtps
+[0.808s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.808s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_fastrtps_cpp.so
+[0.809s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_fastrtps_cpp.so" to ""
+[0.809s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1
+[0.809s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg
+[0.809s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail
+[0.809s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__rosidl_typesupport_introspection_cpp.hpp
+[0.809s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/include/custom_msg1/custom_msg1/msg/detail/log_tf__type_support.cpp
+[0.810s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_introspection_cpp.so
+[0.810s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_introspection_cpp.so" to ""
+[0.810s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_cpp.so
+[0.811s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_typesupport_cpp.so" to ""
+[0.811s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/pythonpath.sh
+[0.811s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/pythonpath.dsv
+[0.812s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info
+[0.812s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.812s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info/PKG-INFO
+[0.812s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.812s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1-0.0.0-py3.10.egg-info/top_level.txt
+[0.813s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1
+[0.813s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.813s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_c.c
+[0.813s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.813s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.813s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.814s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/_custom_msg1_s.ep.rosidl_typesupport_introspection_c.c
+[0.814s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/libcustom_msg1__rosidl_generator_py.so
+[0.814s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg
+[0.814s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/_log_tf_s.c
+[0.814s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/_log_tf.py
+[0.814s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/__init__.py
+[0.815s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/__init__.py
+[0.861s] Listing '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1'...
+[0.861s] Compiling '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/__init__.py'...
+[0.861s] Listing '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg'...
+[0.861s] Compiling '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/__init__.py'...
+[0.862s] Compiling '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/msg/_log_tf.py'...
+[0.868s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.868s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[0.868s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.869s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[0.869s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.870s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages/custom_msg1/custom_msg1_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[0.870s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_generator_py.so
+[0.871s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib/libcustom_msg1__rosidl_generator_py.so" to ""
+[0.871s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/msg/LogTf.idl
+[0.871s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/msg/LogTf.msg
+[0.871s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/ament_index/resource_index/package_run_dependencies/custom_msg1
+[0.872s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/ament_index/resource_index/parent_prefix_path/custom_msg1
+[0.872s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/ament_prefix_path.sh
+[0.872s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/ament_prefix_path.dsv
+[0.872s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/path.sh
+[0.872s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/environment/path.dsv
+[0.873s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/local_setup.bash
+[0.873s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/local_setup.sh
+[0.873s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/local_setup.zsh
+[0.873s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/local_setup.dsv
+[0.873s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/package.dsv
+[0.874s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/ament_index/resource_index/packages/custom_msg1
+[0.874s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_cExport.cmake
+[0.874s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_cExport-noconfig.cmake
+[0.874s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_typesupport_fastrtps_cExport.cmake
+[0.875s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.875s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_introspection_cExport.cmake
+[0.875s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.875s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_cExport.cmake
+[0.876s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_cExport-noconfig.cmake
+[0.876s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_cppExport.cmake
+[0.876s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.876s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.877s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_introspection_cppExport.cmake
+[0.877s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.877s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_cppExport.cmake
+[0.877s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1__rosidl_typesupport_cppExport-noconfig.cmake
+[0.877s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_pyExport.cmake
+[0.878s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/export_custom_msg1__rosidl_generator_pyExport-noconfig.cmake
+[0.878s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/rosidl_cmake-extras.cmake
+[0.878s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.878s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/ament_cmake_export_libraries-extras.cmake
+[0.878s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/ament_cmake_export_targets-extras.cmake
+[0.879s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.879s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.879s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.879s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1Config.cmake
+[0.880s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake/custom_msg1Config-version.cmake
+[0.880s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/package.xml
+[0.884s] Invoked command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sajjad/Downloads/demo_ros2/ros2_ws/build/custom_msg1

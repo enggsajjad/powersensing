@@ -1,0 +1,24 @@
+[100%] Built target publisher1
+[100%] Built target subscriber1
+-- Install configuration: ""
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/publisher1
+-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/publisher1" to ""
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/subscriber1
+-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/subscriber1" to ""
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1//launch
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1//launch/pub_sub_launch.py
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/package_run_dependencies/pub_sub_custom_msg1
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/parent_prefix_path/pub_sub_custom_msg1
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/ament_prefix_path.sh
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/ament_prefix_path.dsv
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/path.sh
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/path.dsv
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.bash
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.sh
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.zsh
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.dsv
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/package.dsv
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/packages/pub_sub_custom_msg1
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/cmake/pub_sub_custom_msg1Config.cmake
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/cmake/pub_sub_custom_msg1Config-version.cmake
+-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/package.xml

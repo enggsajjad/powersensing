@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:22 (find_package):
+  By not providing "Findcustom_msg1.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "custom_msg1", but CMake did not find one.
+
+  Could not find a package configuration file provided by "custom_msg1" with
+  any of the following names:
+
+    custom_msg1Config.cmake
+    custom_msg1-config.cmake
+
+  Add the installation prefix of "custom_msg1" to CMAKE_PREFIX_PATH or set
+  "custom_msg1_DIR" to a directory containing one of the above files.  If
+  "custom_msg1" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m

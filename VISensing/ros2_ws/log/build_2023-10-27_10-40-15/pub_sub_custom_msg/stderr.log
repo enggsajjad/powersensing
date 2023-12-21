@@ -1,0 +1,18 @@
+[31mCMake Error at CMakeLists.txt:23 (find_package):
+  By not providing "Findmap_messages.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "map_messages", but CMake did not find one.
+
+  Could not find a package configuration file provided by "map_messages" with
+  any of the following names:
+
+    map_messagesConfig.cmake
+    map_messages-config.cmake
+
+  Add the installation prefix of "map_messages" to CMAKE_PREFIX_PATH or set
+  "map_messages_DIR" to a directory containing one of the above files.  If
+  "map_messages" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m
+gmake: *** [Makefile:308: cmake_check_build_system] Error 1

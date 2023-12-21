@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msg1/msg/LogTf.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msg1 {
+  module msg {
+    struct LogTf {
+      string time_frame;
+
+      string sensor1;
+
+      int64 volt;
+
+      string sensor2;
+
+      int64 amp;
+    };
+  };
+};

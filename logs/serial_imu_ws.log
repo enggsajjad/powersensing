@@ -1,0 +1,7054 @@
+sajjad@i80pc108:~/Downloads/demo_ros2$ mkdir -p ./serial_imu_ws/src && cd ./serial_imu_ws/ && colcon build
+[1.633s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/sajjad/Downloads/demo_ros2/serial_imu_ws/install/serial_imu' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.633s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/sajjad/Downloads/demo_ros2/serial_imu_ws/install/serial_imu' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+                     
+Summary: 0 packages finished [1.21s]
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ cd src/
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws/src$ ros2 pkg create serial_imu --build-type ament_cmake
+going to create a new package
+package name: serial_imu
+destination directory: /home/sajjad/Downloads/demo_ros2/serial_imu_ws/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['sajjad <sajjad@todo.todo>']
+licenses: ['TODO: License declaration']
+build type: ament_cmake
+dependencies: []
+creating folder ./serial_imu
+creating ./serial_imu/package.xml
+creating source and include folder
+creating folder ./serial_imu/src
+creating folder ./serial_imu/include/serial_imu
+creating ./serial_imu/CMakeLists.txt
+
+[WARNING]: Unknown license 'TODO: License declaration'.  This has been set in the package.xml, but no LICENSE file has been created.
+It is recommended to use one of the ament license identitifers:
+Apache-2.0
+BSL-1.0
+BSD-2.0
+BSD-2-Clause
+BSD-3-Clause
+GPL-3.0-only
+LGPL-3.0-only
+MIT
+MIT-0
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws/src$ ls
+serial_imu
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws/src$ cd ..
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ ls
+build  install  log  src
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ colcon build
+[1.624s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/sajjad/Downloads/demo_ros2/serial_imu_ws/install/serial_imu' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.624s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/sajjad/Downloads/demo_ros2/serial_imu_ws/install/serial_imu' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+Starting >>> serial_imu
+Finished <<< serial_imu [13.7s]                       
+
+Summary: 1 package finished [15.0s]
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ 
+
+
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ source ./install/setup.sh 
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ ros2 launch serial_imu imu_spec_msg.launch.py
+[INFO] [launch]: All log files can be found below /home/sajjad/.ros/log/2023-10-26-00-38-49-304236-i80pc108-87697
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [87698]
+[INFO] [listener-2]: process started with pid [87700]
+[talker-1] standard input is not a terminal device
+[talker-1] 
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273530
+[listener-2] 	  nanosecs:705813536
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273532
+[listener-2] 	  nanosecs:711905808
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273534
+[listener-2] 	  nanosecs:717818018
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273536
+[listener-2] 	  nanosecs:723885606
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273538
+[listener-2] 	  nanosecs:729775782
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273540
+[listener-2] 	  nanosecs:735925661
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273542
+[listener-2] 	  nanosecs:743625017
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273544
+[listener-2] 	  nanosecs:747906680
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273546
+[listener-2] 	  nanosecs:753803344
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698273548
+[listener-2] 	  nanosecs:759890822
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+^C[W
+
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ 
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ colcon build
+Starting >>> serial_imu
+Finished <<< serial_imu [6.13s]                     
+
+Summary: 1 package finished [7.36s]
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ ros2 launch serial_imu imu_spec_msg.launch.py
+[INFO] [launch]: All log files can be found below /home/sajjad/.ros/log/2023-10-26-01-15-13-525656-i80pc108-98894
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [98895]
+[INFO] [listener-2]: process started with pid [98897]
+[talker-1] standard input is not a terminal device...
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 64
+[talker-1] 
+[talker-1] i: 0 buf[i]: Z
+[talker-1] 
+[talker-1] i: 1 buf[i]: �
+[talker-1] 
+[talker-1] i: 2 buf[i]: L
+[talker-1] 
+[talker-1] i: 3 buf[i]: 
+[talker-1] 
+[talker-1] i: 4 buf[i]: l
+[talker-1] 
+[talker-1] i: 5 buf[i]: Q
+[talker-1] 
+[talker-1] i: 6 buf[i]: �
+[talker-1] 
+[talker-1] i: 7 buf[i]: 
+[talker-1] 
+[talker-1] i: 8 buf[i]: �
+[talker-1] 
+[talker-1] i: 9 buf[i]: ;
+[talker-1] 
+[talker-1] i: 10 buf[i]: 
+[talker-1] 
+[talker-1] i: 11 buf[i]: �
+[talker-1] 
+[talker-1] i: 12 buf[i]: 
+[talker-1] 
+[talker-1] i: 13 buf[i]: �
+[talker-1] 
+[talker-1] i: 14 buf[i]: �
+[talker-1] 
+[talker-1] i: 15 buf[i]: �
+[talker-1] 
+[talker-1] i: 16 buf[i]: 
+[talker-1] 
+[talker-1] i: 17 buf[i]: 
+[talker-1] 
+[talker-1] i: 18 buf[i]: �
+[talker-1] 
+[talker-1] i: 19 buf[i]: �
+[talker-1] 
+[talker-1] i: 20 buf[i]: e
+[talker-1] 
+[talker-1] i: 21 buf[i]: >
+[talker-1] 
+[talker-1] i: 22 buf[i]: �
+[talker-1] 
+[talker-1] i: 23 buf[i]: &
+[talker-1] 
+[talker-1] i: 24 buf[i]: E
+[talker-1] 
+[talker-1] i: 25 buf[i]: ?
+[talker-1] 
+[talker-1] i: 26 buf[i]: \
+[talker-1] 
+[talker-1] i: 27 buf[i]: �
+[talker-1] 
+[talker-1] i: 28 buf[i]: 0
+[talker-1] 
+[talker-1] i: 29 buf[i]: ?
+[talker-1] 
+[talker-1] i: 30 buf[i]: �
+[talker-1] 
+[talker-1] i: 31 buf[i]: �
+[talker-1] 
+[talker-1] i: 32 buf[i]: Z
+[talker-1] 
+[talker-1] i: 33 buf[i]: �
+[talker-1] 
+[talker-1] i: 34 buf[i]: �
+[talker-1] 
+[talker-1] i: 35 buf[i]: �
+[talker-1] 
+[talker-1] i: 36 buf[i]: �
+[talker-1] 
+[talker-1] i: 37 buf[i]: �
+[talker-1] 
+[talker-1] i: 38 buf[i]: �
+[talker-1] 
+[talker-1] i: 39 buf[i]: #
+[talker-1] 
+[talker-1] i: 40 buf[i]: �
+[talker-1] 
+[talker-1] i: 41 buf[i]: �
+[talker-1] 
+[talker-1] i: 42 buf[i]: x
+[talker-1] 
+[talker-1] i: 43 buf[i]: w
+[talker-1] 
+[talker-1] i: 44 buf[i]: �
+[talker-1] 
+[talker-1] i: 45 buf[i]: A
+[talker-1] 
+[talker-1] i: 46 buf[i]: �
+[talker-1] 
+[talker-1] i: 47 buf[i]: �
+[talker-1] 
+[talker-1] i: 48 buf[i]: �
+[talker-1] 
+[talker-1] i: 49 buf[i]: �
+[talker-1] 
+[talker-1] i: 50 buf[i]: �
+[talker-1] 
+[talker-1] i: 51 buf[i]: *
+[talker-1] 
+[talker-1] i: 52 buf[i]: 
+[talker-1] 
+[talker-1] 
+[talker-1] i: 53 buf[i]: �
+[talker-1] 
+[talker-1] i: 54 buf[i]: �
+[talker-1] 
+[talker-1] i: 55 buf[i]: �
+[talker-1] 
+[talker-1] i: 56 buf[i]: B
+[talker-1] 
+[talker-1] i: 57 buf[i]: B
+[talker-1] 
+[talker-1] i: 58 buf[i]: �
+[talker-1] 
+[talker-1] i: 59 buf[i]: 
+[talker-1] 
+[talker-1] i: 60 buf[i]: �
+[talker-1] 
+[talker-1] i: 61 buf[i]: �
+[talker-1] 
+[talker-1] i: 62 buf[i]: 
+[talker-1] 
+[talker-1] i: 63 buf[i]: 
+
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 18
+[talker-1] 
+[talker-1] i: 0 buf[i]: 6
+[talker-1] 
+[talker-1] i: 1 buf[i]: �
+[talker-1] 
+[talker-1] i: 2 buf[i]: �
+[talker-1] 
+[talker-1] i: 3 buf[i]: �
+[talker-1] 
+[talker-1] i: 4 buf[i]: Z
+[talker-1] 
+[talker-1] i: 5 buf[i]: ?
+[talker-1] 
+[talker-1] i: 6 buf[i]: �
+[talker-1] 
+[talker-1] i: 7 buf[i]: �
+[talker-1] 
+[talker-1] i: 8 buf[i]: �
+[talker-1] 
+[talker-1] i: 9 buf[i]: >
+[talker-1] 
+[talker-1] i: 10 buf[i]: �
+[talker-1] 
+[talker-1] i: 11 buf[i]: �
+[talker-1] 
+[talker-1] i: 12 buf[i]: �
+[talker-1] 
+[talker-1] i: 13 buf[i]: �
+[talker-1] 
+[talker-1] i: 14 buf[i]: �
+[talker-1] 
+[talker-1] i: 15 buf[i]: �
+[talker-1] 
+[talker-1] i: 16 buf[i]: �
+[talker-1] 
+[talker-1] i: 17 buf[i]: �
+[talker-1] 
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698275715
+[listener-2] 	  nanosecs:372348769
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[talker-1] [INFO] [1698275716.977492351] [rclcpp]: signal_handler(signum=2)
+[listener-2] [INFO] [1698275716.977477833] [rclcpp]: signal_handler(signum=2)
+[talker-1] n: 0
+[talker-1] 
+[listener-2] cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+[listener-2] [ERROR] [1698275717.084379780] [imu_sub.rclcpp]: Error in destruction of rcl subscription handle: Failed to delete datareader, at ./src/subscription.cpp:52, at ./src/rcl/subscription.c:183
+[listener-2] cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+[listener-2] Fail in delete datareader, at ./src/rmw_service.cpp:104 during '__function__'
+[INFO] [talker-1]: process has finished cleanly [pid 98895]
+[ERROR] [listener-2]: process has died [pid 98897, exit code -11, cmd '/home/sajjad/Downloads/demo_ros2/serial_imu_ws/install/serial_imu/lib/serial_imu/listener --ros-args'].
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ 
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ ros2 launch serial_imu imu_spec_msg.launch.py
+[INFO] [launch]: All log files can be found below /home/sajjad/.ros/log/2023-10-26-01-31-47-961071-i80pc108-104042
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [104043]
+[INFO] [listener-2]: process started with pid [104045]
+[talker-1] standard input is not a terminal device...
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 64
+[talker-1] 
+[talker-1] i: 0 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 1 buf[i]: a5
+[talker-1] 
+[talker-1] i: 2 buf[i]: 4c
+[talker-1] 
+[talker-1] i: 3 buf[i]: 0
+[talker-1] 
+[talker-1] i: 4 buf[i]: 6c
+[talker-1] 
+[talker-1] i: 5 buf[i]: 51
+[talker-1] 
+[talker-1] i: 6 buf[i]: 91
+[talker-1] 
+[talker-1] i: 7 buf[i]: 0
+[talker-1] 
+[talker-1] i: 8 buf[i]: a0
+[talker-1] 
+[talker-1] i: 9 buf[i]: 3b
+[talker-1] 
+[talker-1] i: 10 buf[i]: 1
+[talker-1] 
+[talker-1] i: 11 buf[i]: a8
+[talker-1] 
+[talker-1] i: 12 buf[i]: 2
+[talker-1] 
+[talker-1] i: 13 buf[i]: 97
+[talker-1] 
+[talker-1] i: 14 buf[i]: bd
+[talker-1] 
+[talker-1] i: 15 buf[i]: bb
+[talker-1] 
+[talker-1] i: 16 buf[i]: 4
+[talker-1] 
+[talker-1] i: 17 buf[i]: 0
+[talker-1] 
+[talker-1] i: 18 buf[i]: 9c
+[talker-1] 
+[talker-1] i: 19 buf[i]: a0
+[talker-1] 
+[talker-1] i: 20 buf[i]: 65
+[talker-1] 
+[talker-1] i: 21 buf[i]: 3e
+[talker-1] 
+[talker-1] i: 22 buf[i]: a2
+[talker-1] 
+[talker-1] i: 23 buf[i]: 26
+[talker-1] 
+[talker-1] i: 24 buf[i]: 45
+[talker-1] 
+[talker-1] i: 25 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 26 buf[i]: 5c
+[talker-1] 
+[talker-1] i: 27 buf[i]: e7
+[talker-1] 
+[talker-1] i: 28 buf[i]: 30
+[talker-1] 
+[talker-1] i: 29 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 30 buf[i]: e2
+[talker-1] 
+[talker-1] i: 31 buf[i]: d4
+[talker-1] 
+[talker-1] i: 32 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 33 buf[i]: c2
+[talker-1] 
+[talker-1] i: 34 buf[i]: e5
+[talker-1] 
+[talker-1] i: 35 buf[i]: 9d
+[talker-1] 
+[talker-1] i: 36 buf[i]: a0
+[talker-1] 
+[talker-1] i: 37 buf[i]: c1
+[talker-1] 
+[talker-1] i: 38 buf[i]: eb
+[talker-1] 
+[talker-1] i: 39 buf[i]: 23
+[talker-1] 
+[talker-1] i: 40 buf[i]: ee
+[talker-1] 
+[talker-1] i: 41 buf[i]: c2
+[talker-1] 
+[talker-1] i: 42 buf[i]: 78
+[talker-1] 
+[talker-1] i: 43 buf[i]: 77
+[talker-1] 
+[talker-1] i: 44 buf[i]: 99
+[talker-1] 
+[talker-1] i: 45 buf[i]: 41
+[talker-1] 
+[talker-1] i: 46 buf[i]: ab
+[talker-1] 
+[talker-1] i: 47 buf[i]: aa
+[talker-1] 
+[talker-1] i: 48 buf[i]: d1
+[talker-1] 
+[talker-1] i: 49 buf[i]: c1
+[talker-1] 
+[talker-1] i: 50 buf[i]: ab
+[talker-1] 
+[talker-1] i: 51 buf[i]: 2a
+[talker-1] 
+[talker-1] i: 52 buf[i]: a
+[talker-1] 
+[talker-1] i: 53 buf[i]: c2
+[talker-1] 
+[talker-1] i: 54 buf[i]: 8d
+[talker-1] 
+[talker-1] i: 55 buf[i]: e1
+[talker-1] 
+[talker-1] i: 56 buf[i]: 42
+[talker-1] 
+[talker-1] i: 57 buf[i]: 42
+[talker-1] 
+[talker-1] i: 58 buf[i]: 8f
+[talker-1] 
+[talker-1] i: 59 buf[i]: 1d
+[talker-1] 
+[talker-1] i: 60 buf[i]: a8
+[talker-1] 
+[talker-1] i: 61 buf[i]: c1
+[talker-1] 
+[talker-1] i: 62 buf[i]: 1e
+[talker-1] 
+[talker-1] i: 63 buf[i]: c
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 18
+[talker-1] 
+[talker-1] i: 0 buf[i]: 36
+[talker-1] 
+[talker-1] i: 1 buf[i]: c2
+[talker-1] 
+[talker-1] i: 2 buf[i]: e6
+[talker-1] 
+[talker-1] i: 3 buf[i]: e5
+[talker-1] 
+[talker-1] i: 4 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 5 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 6 buf[i]: c1
+[talker-1] 
+[talker-1] i: 7 buf[i]: 94
+[talker-1] 
+[talker-1] i: 8 buf[i]: 9e
+[talker-1] 
+[talker-1] i: 9 buf[i]: 3e
+[talker-1] 
+[talker-1] i: 10 buf[i]: b8
+[talker-1] 
+[talker-1] i: 11 buf[i]: c0
+[talker-1] 
+[talker-1] i: 12 buf[i]: 9e
+[talker-1] 
+[talker-1] i: 13 buf[i]: be
+[talker-1] 
+[talker-1] i: 14 buf[i]: be
+[talker-1] 
+[talker-1] i: 15 buf[i]: df
+[talker-1] 
+[talker-1] i: 16 buf[i]: 8d
+[talker-1] 
+[talker-1] i: 17 buf[i]: be
+[talker-1] 
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698276708
+[listener-2] 	  nanosecs:338215418
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 64
+[talker-1] 
+[talker-1] i: 0 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 1 buf[i]: a5
+[talker-1] 
+[talker-1] i: 2 buf[i]: 4c
+[talker-1] 
+[talker-1] i: 3 buf[i]: 0
+[talker-1] 
+[talker-1] i: 4 buf[i]: 6c
+[talker-1] 
+[talker-1] i: 5 buf[i]: 51
+[talker-1] 
+[talker-1] i: 6 buf[i]: 91
+[talker-1] 
+[talker-1] i: 7 buf[i]: 0
+[talker-1] 
+[talker-1] i: 8 buf[i]: a0
+[talker-1] 
+[talker-1] i: 9 buf[i]: 3b
+[talker-1] 
+[talker-1] i: 10 buf[i]: 1
+[talker-1] 
+[talker-1] i: 11 buf[i]: a8
+[talker-1] 
+[talker-1] i: 12 buf[i]: 2
+[talker-1] 
+[talker-1] i: 13 buf[i]: 97
+[talker-1] 
+[talker-1] i: 14 buf[i]: bd
+[talker-1] 
+[talker-1] i: 15 buf[i]: bb
+[talker-1] 
+[talker-1] i: 16 buf[i]: 4
+[talker-1] 
+[talker-1] i: 17 buf[i]: 0
+[talker-1] 
+[talker-1] i: 18 buf[i]: 9c
+[talker-1] 
+[talker-1] i: 19 buf[i]: a0
+[talker-1] 
+[talker-1] i: 20 buf[i]: 65
+[talker-1] 
+[talker-1] i: 21 buf[i]: 3e
+[talker-1] 
+[talker-1] i: 22 buf[i]: a2
+[talker-1] 
+[talker-1] i: 23 buf[i]: 26
+[talker-1] 
+[talker-1] i: 24 buf[i]: 45
+[talker-1] 
+[talker-1] i: 25 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 26 buf[i]: 5c
+[talker-1] 
+[talker-1] i: 27 buf[i]: e7
+[talker-1] 
+[talker-1] i: 28 buf[i]: 30
+[talker-1] 
+[talker-1] i: 29 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 30 buf[i]: e2
+[talker-1] 
+[talker-1] i: 31 buf[i]: d4
+[talker-1] 
+[talker-1] i: 32 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 33 buf[i]: c2
+[talker-1] 
+[talker-1] i: 34 buf[i]: e5
+[talker-1] 
+[talker-1] i: 35 buf[i]: 9d
+[talker-1] 
+[talker-1] i: 36 buf[i]: a0
+[talker-1] 
+[talker-1] i: 37 buf[i]: c1
+[talker-1] 
+[talker-1] i: 38 buf[i]: eb
+[talker-1] 
+[talker-1] i: 39 buf[i]: 23
+[talker-1] 
+[talker-1] i: 40 buf[i]: ee
+[talker-1] 
+[talker-1] i: 41 buf[i]: c2
+[talker-1] 
+[talker-1] i: 42 buf[i]: 78
+[talker-1] 
+[talker-1] i: 43 buf[i]: 77
+[talker-1] 
+[talker-1] i: 44 buf[i]: 99
+[talker-1] 
+[talker-1] i: 45 buf[i]: 41
+[talker-1] 
+[talker-1] i: 46 buf[i]: ab
+[talker-1] 
+[talker-1] i: 47 buf[i]: aa
+[talker-1] 
+[talker-1] i: 48 buf[i]: d1
+[talker-1] 
+[talker-1] i: 49 buf[i]: c1
+[talker-1] 
+[talker-1] i: 50 buf[i]: ab
+[talker-1] 
+[talker-1] i: 51 buf[i]: 2a
+[talker-1] 
+[talker-1] i: 52 buf[i]: a
+[talker-1] 
+[talker-1] i: 53 buf[i]: c2
+[talker-1] 
+[talker-1] i: 54 buf[i]: 8d
+[talker-1] 
+[talker-1] i: 55 buf[i]: e1
+[talker-1] 
+[talker-1] i: 56 buf[i]: 42
+[talker-1] 
+[talker-1] i: 57 buf[i]: 42
+[talker-1] 
+[talker-1] i: 58 buf[i]: 8f
+[talker-1] 
+[talker-1] i: 59 buf[i]: 1d
+[talker-1] 
+[talker-1] i: 60 buf[i]: a8
+[talker-1] 
+[talker-1] i: 61 buf[i]: c1
+[talker-1] 
+[talker-1] i: 62 buf[i]: 1e
+[talker-1] 
+[talker-1] i: 63 buf[i]: c
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 18
+[talker-1] 
+[talker-1] i: 0 buf[i]: 36
+[talker-1] 
+[talker-1] i: 1 buf[i]: c2
+[talker-1] 
+[talker-1] i: 2 buf[i]: e6
+[talker-1] 
+[talker-1] i: 3 buf[i]: e5
+[talker-1] 
+[talker-1] i: 4 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 5 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 6 buf[i]: c1
+[talker-1] 
+[talker-1] i: 7 buf[i]: 94
+[talker-1] 
+[talker-1] i: 8 buf[i]: 9e
+[talker-1] 
+[talker-1] i: 9 buf[i]: 3e
+[talker-1] 
+[talker-1] i: 10 buf[i]: b8
+[talker-1] 
+[talker-1] i: 11 buf[i]: c0
+[talker-1] 
+[talker-1] i: 12 buf[i]: 9e
+[talker-1] 
+[talker-1] i: 13 buf[i]: be
+[talker-1] 
+[talker-1] i: 14 buf[i]: be
+[talker-1] 
+[talker-1] i: 15 buf[i]: df
+[talker-1] 
+[talker-1] i: 16 buf[i]: 8d
+[talker-1] 
+[talker-1] i: 17 buf[i]: be
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698276710
+[listener-2] 	  nanosecs:344262129
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_imu_ws$ ros2 launch serial_imu imu_spec_msg.launch.py
+[INFO] [launch]: All log files can be found below /home/sajjad/.ros/log/2023-10-26-02-19-33-976850-i80pc108-118556
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [118557]
+[INFO] [listener-2]: process started with pid [118559]
+[talker-1] standard input is not a terminal device...
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 64
+[talker-1] 
+[talker-1] i: 0 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 1 buf[i]: a5
+[talker-1] 
+[talker-1] i: 2 buf[i]: 4c
+[talker-1] 
+[talker-1] i: 3 buf[i]: 0
+[talker-1] 
+[talker-1] i: 4 buf[i]: 6c
+[talker-1] 
+[talker-1] i: 5 buf[i]: 51
+[talker-1] 
+[talker-1] i: 6 buf[i]: 91
+[talker-1] 
+[talker-1] i: 7 buf[i]: 0
+[talker-1] 
+[talker-1] i: 8 buf[i]: a0
+[talker-1] 
+[talker-1] i: 9 buf[i]: 3b
+[talker-1] 
+[talker-1] i: 10 buf[i]: 1
+[talker-1] 
+[talker-1] i: 11 buf[i]: a8
+[talker-1] 
+[talker-1] i: 12 buf[i]: 2
+[talker-1] 
+[talker-1] i: 13 buf[i]: 97
+[talker-1] 
+[talker-1] i: 14 buf[i]: bd
+[talker-1] 
+[talker-1] i: 15 buf[i]: bb
+[talker-1] 
+[talker-1] i: 16 buf[i]: 4
+[talker-1] 
+[talker-1] i: 17 buf[i]: 0
+[talker-1] 
+[talker-1] i: 18 buf[i]: 9c
+[talker-1] 
+[talker-1] i: 19 buf[i]: a0
+[talker-1] 
+[talker-1] i: 20 buf[i]: 65
+[talker-1] 
+[talker-1] i: 21 buf[i]: 3e
+[talker-1] 
+[talker-1] i: 22 buf[i]: a2
+[talker-1] 
+[talker-1] i: 23 buf[i]: 26
+[talker-1] 
+[talker-1] i: 24 buf[i]: 45
+[talker-1] 
+[talker-1] i: 25 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 26 buf[i]: 5c
+[talker-1] 
+[talker-1] i: 27 buf[i]: e7
+[talker-1] 
+[talker-1] i: 28 buf[i]: 30
+[talker-1] 
+[talker-1] i: 29 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 30 buf[i]: e2
+[talker-1] 
+[talker-1] i: 31 buf[i]: d4
+[talker-1] 
+[talker-1] i: 32 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 33 buf[i]: c2
+[talker-1] 
+[talker-1] i: 34 buf[i]: e5
+[talker-1] 
+[talker-1] i: 35 buf[i]: 9d
+[talker-1] 
+[talker-1] i: 36 buf[i]: a0
+[talker-1] 
+[talker-1] i: 37 buf[i]: c1
+[talker-1] 
+[talker-1] i: 38 buf[i]: eb
+[talker-1] 
+[talker-1] i: 39 buf[i]: 23
+[talker-1] 
+[talker-1] i: 40 buf[i]: ee
+[talker-1] 
+[talker-1] i: 41 buf[i]: c2
+[talker-1] 
+[talker-1] i: 42 buf[i]: 78
+[talker-1] 
+[talker-1] i: 43 buf[i]: 77
+[talker-1] 
+[talker-1] i: 44 buf[i]: 99
+[talker-1] 
+[talker-1] i: 45 buf[i]: 41
+[talker-1] 
+[talker-1] i: 46 buf[i]: ab
+[talker-1] 
+[talker-1] i: 47 buf[i]: aa
+[talker-1] 
+[talker-1] i: 48 buf[i]: d1
+[talker-1] 
+[talker-1] i: 49 buf[i]: c1
+[talker-1] 
+[talker-1] i: 50 buf[i]: ab
+[talker-1] 
+[talker-1] i: 51 buf[i]: 2a
+[talker-1] 
+[talker-1] i: 52 buf[i]: a
+[talker-1] 
+[talker-1] i: 53 buf[i]: c2
+[talker-1] 
+[talker-1] i: 54 buf[i]: 8d
+[talker-1] 
+[talker-1] i: 55 buf[i]: e1
+[talker-1] 
+[talker-1] i: 56 buf[i]: 42
+[talker-1] 
+[talker-1] i: 57 buf[i]: 42
+[talker-1] 
+[talker-1] i: 58 buf[i]: 8f
+[talker-1] 
+[talker-1] i: 59 buf[i]: 1d
+[talker-1] 
+[talker-1] i: 60 buf[i]: a8
+[talker-1] 
+[talker-1] i: 61 buf[i]: c1
+[talker-1] 
+[talker-1] i: 62 buf[i]: 1e
+[talker-1] 
+[talker-1] i: 63 buf[i]: c
+[talker-1] 
+[talker-1] n: 18
+[talker-1] 
+[talker-1] i: 0 buf[i]: 36
+[talker-1] 
+[talker-1] i: 1 buf[i]: c2
+[talker-1] 
+[talker-1] i: 2 buf[i]: e6
+[talker-1] 
+[talker-1] i: 3 buf[i]: e5
+[talker-1] 
+[talker-1] i: 4 buf[i]: 5a
+[talker-1] 
+[talker-1] i: 5 buf[i]: 3f
+[talker-1] 
+[talker-1] i: 6 buf[i]: c1
+[talker-1] 
+[talker-1] i: 7 buf[i]: 94
+[talker-1] 
+[talker-1] i: 8 buf[i]: 9e
+[talker-1] 
+[talker-1] i: 9 buf[i]: 3e
+[talker-1] 
+[talker-1] i: 10 buf[i]: b8
+[talker-1] 
+[talker-1] i: 11 buf[i]: c0
+[talker-1] 
+[talker-1] i: 12 buf[i]: 9e
+[talker-1] 
+[talker-1] i: 13 buf[i]: be
+[talker-1] 
+[talker-1] i: 14 buf[i]: be
+[talker-1] 
+[talker-1] i: 15 buf[i]: df
+[talker-1] 
+[talker-1] i: 16 buf[i]: 8d
+[talker-1] 
+[talker-1] i: 17 buf[i]: be
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] decode_ch
+[talker-1] parse_data
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698279574
+[listener-2] 	  nanosecs:526994327
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.309728652238845825
+[listener-2] 	y: -0.310064077377319336
+[listener-2] 	z: -0.277097642421722412
+[listener-2] 	w: 0.855070471763610840
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: -0.954832728303298905
+[listener-2] 	y: -0.350411395235996237
+[listener-2] 	z: -2.078165898134384015
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 2.197605788707733154
+[listener-2] 	y: 7.547183251380920943
+[listener-2] 	z: 6.772096586227417170
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 
+[talker-1] n: 0
+[talker-1] 

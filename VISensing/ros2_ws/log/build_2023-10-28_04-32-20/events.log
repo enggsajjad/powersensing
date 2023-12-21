@@ -1,0 +1,301 @@
+[0.000000] (-) TimerEvent: {}
+[0.001244] (-) JobUnselected: {'identifier': 'custom_msg'}
+[0.001320] (-) JobUnselected: {'identifier': 'custom_msg1'}
+[0.001470] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.001516] (-) JobUnselected: {'identifier': 'pub_sub_custom_msg'}
+[0.001573] (-) JobUnselected: {'identifier': 'pub_sub_custom_msg1'}
+[0.001631] (-) JobUnselected: {'identifier': 'ros2_msg'}
+[0.001706] (-) JobUnselected: {'identifier': 'serial_imu'}
+[0.001834] (-) JobUnselected: {'identifier': 'serial_imu'}
+[0.001880] (-) JobUnselected: {'identifier': 'serial_imu'}
+[0.001941] (serial_imu1) JobQueued: {'identifier': 'serial_imu1', 'dependencies': OrderedDict([('custom_msg1', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1')])}
+[0.002019] (serial_imu1) JobStarted: {'identifier': 'serial_imu1'}
+[0.099604] (-) TimerEvent: {}
+[0.101861] (serial_imu1) JobProgress: {'identifier': 'serial_imu1', 'progress': 'cmake'}
+[0.102196] (serial_imu1) Command: {'cmd': ['/usr/bin/cmake', '/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1', '-DCMAKE_INSTALL_PREFIX=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1'], 'cwd': '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sajjad'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:/home/sajjad/Downloads/demo_ros2/install/custom_msg1/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('PICO_EXTRAS_PATH', '/home/sajjad/pico/pico-extras'), ('HOME', '/home/sajjad'), ('OLDPWD', '/home/sajjad/Downloads/demo_ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sajjad'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sajjad'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sajjad/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/i80pc108:@/tmp/.ICE-unix/1351,unix/i80pc108:/tmp/.ICE-unix/1351'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a9e1bcd_4112_4dc1_a443_5972b9370b37'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YN6DD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('PICO_EXAMPLES_PATH', '/home/sajjad/pico/pico-examples'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/install/custom_msg1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/sajjad/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_PLAYGROUND_PATH', '/home/sajjad/pico/pico-playground'), ('PYTHONPATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/install/custom_msg1/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/install/custom_msg1:/opt/ros/humble')]), 'shell': False}
+[0.177635] (serial_imu1) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199722] (-) TimerEvent: {}
+[0.256452] (serial_imu1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.272374] (serial_imu1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299820] (-) TimerEvent: {}
+[0.386790] (serial_imu1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.398715] (serial_imu1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.399111] (serial_imu1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.399723] (serial_imu1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.399963] (-) TimerEvent: {}
+[0.403685] (serial_imu1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500098] (-) TimerEvent: {}
+[0.510946] (serial_imu1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.520945] (serial_imu1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.521504] (serial_imu1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.522304] (serial_imu1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.525382] (serial_imu1) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600188] (-) TimerEvent: {}
+[0.700537] (-) TimerEvent: {}
+[0.757392] (serial_imu1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.800709] (-) TimerEvent: {}
+[0.885185] (serial_imu1) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.900866] (-) TimerEvent: {}
+[0.953313] (serial_imu1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.960169] (serial_imu1) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.971966] (serial_imu1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.001018] (-) TimerEvent: {}
+[1.007624] (serial_imu1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.048525] (serial_imu1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101160] (-) TimerEvent: {}
+[1.173698] (serial_imu1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.177160] (serial_imu1) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201309] (-) TimerEvent: {}
+[1.301655] (-) TimerEvent: {}
+[1.315660] (serial_imu1) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.351023] (serial_imu1) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.401743] (-) TimerEvent: {}
+[1.414511] (serial_imu1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.427349] (serial_imu1) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.501890] (-) TimerEvent: {}
+[1.525411] (serial_imu1) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.526275] (serial_imu1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.601998] (-) TimerEvent: {}
+[1.631525] (serial_imu1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.633875] (serial_imu1) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.702114] (-) TimerEvent: {}
+[1.802543] (-) TimerEvent: {}
+[1.882769] (serial_imu1) StdoutLine: {'line': b'-- Found custom_msg1: 0.0.0 (/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/share/custom_msg1/cmake)\n'}
+[1.902647] (-) TimerEvent: {}
+[1.906435] (serial_imu1) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.002821] (-) TimerEvent: {}
+[2.022456] (serial_imu1) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.024606] (serial_imu1) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.024953] (serial_imu1) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.025235] (serial_imu1) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.026747] (serial_imu1) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.026956] (serial_imu1) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.027677] (serial_imu1) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.028685] (serial_imu1) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.029937] (serial_imu1) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.031774] (serial_imu1) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.032084] (serial_imu1) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.033546] (serial_imu1) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.035829] (serial_imu1) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.055300] (serial_imu1) StdoutLine: {'line': b'-- Generating done\n'}
+[2.058671] (serial_imu1) StdoutLine: {'line': b'-- Build files have been written to: /home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1\n'}
+[2.072143] (serial_imu1) CommandEnded: {'returncode': 0}
+[2.073092] (serial_imu1) JobProgress: {'identifier': 'serial_imu1', 'progress': 'build'}
+[2.074675] (serial_imu1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1', '--', '-j4', '-l4'], 'cwd': '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sajjad'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:/home/sajjad/Downloads/demo_ros2/install/custom_msg1/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('PICO_EXTRAS_PATH', '/home/sajjad/pico/pico-extras'), ('HOME', '/home/sajjad'), ('OLDPWD', '/home/sajjad/Downloads/demo_ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sajjad'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sajjad'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sajjad/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/i80pc108:@/tmp/.ICE-unix/1351,unix/i80pc108:/tmp/.ICE-unix/1351'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a9e1bcd_4112_4dc1_a443_5972b9370b37'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YN6DD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('PICO_EXAMPLES_PATH', '/home/sajjad/pico/pico-examples'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/install/custom_msg1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/sajjad/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_PLAYGROUND_PATH', '/home/sajjad/pico/pico-playground'), ('PYTHONPATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/install/custom_msg1/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/install/custom_msg1:/opt/ros/humble')]), 'shell': False}
+[2.102954] (-) TimerEvent: {}
+[2.145566] (serial_imu1) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/talker1.dir/src/ch_serial.c.o\x1b[0m\n'}
+[2.148597] (serial_imu1) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/talker1.dir/src/serial_port.cpp.o\x1b[0m\n'}
+[2.148967] (serial_imu1) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/listener1.dir/src/sub_spec.cpp.o\x1b[0m\n'}
+[2.181921] (serial_imu1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/ch_serial.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kparse_data\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.182667] (serial_imu1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/ch_serial.c:48:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.183168] (serial_imu1) StderrLine: {'line': b'   48 |     int ofs = 0, \x1b[01;35m\x1b[Ki\x1b[m\x1b[K = 0;\n'}
+[2.183589] (serial_imu1) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.186137] (serial_imu1) StderrLine: {'line': b'At top level:\n'}
+[2.186760] (serial_imu1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/ch_serial.c:21:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KR4\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function\x07-Wunused-function\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.187200] (serial_imu1) StderrLine: {'line': b'   21 | static float    \x1b[01;35m\x1b[KR4\x1b[m\x1b[K(uint8_t *p) {float    r; memcpy(&r,p,4); return r;}\n'}
+[2.187611] (serial_imu1) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.203090] (-) TimerEvent: {}
+[2.303682] (-) TimerEvent: {}
+[2.404057] (-) TimerEvent: {}
+[2.504435] (-) TimerEvent: {}
+[2.604838] (-) TimerEvent: {}
+[2.705271] (-) TimerEvent: {}
+[2.805650] (-) TimerEvent: {}
+[2.906017] (-) TimerEvent: {}
+[3.006382] (-) TimerEvent: {}
+[3.106739] (-) TimerEvent: {}
+[3.207082] (-) TimerEvent: {}
+[3.307441] (-) TimerEvent: {}
+[3.407807] (-) TimerEvent: {}
+[3.508219] (-) TimerEvent: {}
+[3.608695] (-) TimerEvent: {}
+[3.709237] (-) TimerEvent: {}
+[3.809755] (-) TimerEvent: {}
+[3.910232] (-) TimerEvent: {}
+[4.010680] (-) TimerEvent: {}
+[4.111186] (-) TimerEvent: {}
+[4.211706] (-) TimerEvent: {}
+[4.312195] (-) TimerEvent: {}
+[4.412612] (-) TimerEvent: {}
+[4.513206] (-) TimerEvent: {}
+[4.613706] (-) TimerEvent: {}
+[4.714234] (-) TimerEvent: {}
+[4.814610] (-) TimerEvent: {}
+[4.915004] (-) TimerEvent: {}
+[5.015364] (-) TimerEvent: {}
+[5.115724] (-) TimerEvent: {}
+[5.216139] (-) TimerEvent: {}
+[5.316513] (-) TimerEvent: {}
+[5.417096] (-) TimerEvent: {}
+[5.517482] (-) TimerEvent: {}
+[5.617969] (-) TimerEvent: {}
+[5.718424] (-) TimerEvent: {}
+[5.818864] (-) TimerEvent: {}
+[5.860731] (serial_imu1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[5.861115] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.861334] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.861500] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.863293] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.863710] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.864113] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.864350] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.864625] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.864762] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.864891] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.865034] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:13\x1b[m\x1b[K:\n'}
+[5.865167] (serial_imu1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SubscriberNode::callback(custom_msg1::msg::LogTf_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.865330] (serial_imu1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:46:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_volt_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.865495] (serial_imu1) StderrLine: {'line': b'   46 |       RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"%d"\x1b[m\x1b[K, \x1b[32m\x1b[Kmsg->volt\x1b[m\x1b[K); //change\n'}
+[5.865650] (serial_imu1) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.865803] (serial_imu1) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[5.865958] (serial_imu1) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_volt_type {aka long int}\x1b[m\x1b[K\n'}
+[5.866412] (serial_imu1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:46:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[5.866578] (serial_imu1) StderrLine: {'line': b'   46 |       RCLCPP_INFO(this->get_logger(), "\x1b[01;36m\x1b[K%d\x1b[m\x1b[K", msg->volt); //change\n'}
+[5.866710] (serial_imu1) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[5.866861] (serial_imu1) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[5.867018] (serial_imu1) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[5.867171] (serial_imu1) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[5.867326] (serial_imu1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[5.867479] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.867636] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.867787] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.867979] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.868163] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.868319] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.868466] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.868617] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.868774] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.868930] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.869089] (serial_imu1) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:13\x1b[m\x1b[K:\n'}
+[5.869243] (serial_imu1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:48:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_amp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.869429] (serial_imu1) StderrLine: {'line': b'   48 |       RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"%d"\x1b[m\x1b[K, \x1b[32m\x1b[Kmsg->amp\x1b[m\x1b[K); //change\n'}
+[5.869585] (serial_imu1) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~\x1b[m\x1b[K\n'}
+[5.869732] (serial_imu1) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[5.869885] (serial_imu1) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_amp_type {aka long int}\x1b[m\x1b[K\n'}
+[5.870037] (serial_imu1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:48:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[5.870195] (serial_imu1) StderrLine: {'line': b'   48 |       RCLCPP_INFO(this->get_logger(), "\x1b[01;36m\x1b[K%d\x1b[m\x1b[K", msg->amp); //change\n'}
+[5.870338] (serial_imu1) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[5.870554] (serial_imu1) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[5.870696] (serial_imu1) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[5.870818] (serial_imu1) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[5.918986] (-) TimerEvent: {}
+[6.019371] (-) TimerEvent: {}
+[6.119887] (-) TimerEvent: {}
+[6.220392] (-) TimerEvent: {}
+[6.320886] (-) TimerEvent: {}
+[6.421447] (-) TimerEvent: {}
+[6.521988] (-) TimerEvent: {}
+[6.622379] (-) TimerEvent: {}
+[6.722739] (-) TimerEvent: {}
+[6.823115] (-) TimerEvent: {}
+[6.923504] (-) TimerEvent: {}
+[7.023871] (-) TimerEvent: {}
+[7.124276] (-) TimerEvent: {}
+[7.224639] (-) TimerEvent: {}
+[7.327462] (-) TimerEvent: {}
+[7.427832] (-) TimerEvent: {}
+[7.528572] (-) TimerEvent: {}
+[7.628940] (-) TimerEvent: {}
+[7.729414] (-) TimerEvent: {}
+[7.830109] (-) TimerEvent: {}
+[7.930472] (-) TimerEvent: {}
+[8.030906] (-) TimerEvent: {}
+[8.131471] (-) TimerEvent: {}
+[8.231816] (-) TimerEvent: {}
+[8.332229] (-) TimerEvent: {}
+[8.432713] (-) TimerEvent: {}
+[8.533086] (-) TimerEvent: {}
+[8.633452] (-) TimerEvent: {}
+[8.734000] (-) TimerEvent: {}
+[8.834474] (-) TimerEvent: {}
+[8.935002] (-) TimerEvent: {}
+[9.035472] (-) TimerEvent: {}
+[9.135877] (-) TimerEvent: {}
+[9.142562] (serial_imu1) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable talker1\x1b[0m\n'}
+[9.236034] (-) TimerEvent: {}
+[9.336649] (-) TimerEvent: {}
+[9.437109] (-) TimerEvent: {}
+[9.537504] (-) TimerEvent: {}
+[9.562543] (serial_imu1) StdoutLine: {'line': b'[ 80%] Built target talker1\n'}
+[9.637653] (-) TimerEvent: {}
+[9.738093] (-) TimerEvent: {}
+[9.838493] (-) TimerEvent: {}
+[9.938943] (-) TimerEvent: {}
+[10.039314] (-) TimerEvent: {}
+[10.139693] (-) TimerEvent: {}
+[10.240131] (-) TimerEvent: {}
+[10.340526] (-) TimerEvent: {}
+[10.440862] (-) TimerEvent: {}
+[10.541284] (-) TimerEvent: {}
+[10.641716] (-) TimerEvent: {}
+[10.742087] (-) TimerEvent: {}
+[10.842463] (-) TimerEvent: {}
+[10.942810] (-) TimerEvent: {}
+[11.043159] (-) TimerEvent: {}
+[11.143504] (-) TimerEvent: {}
+[11.243924] (-) TimerEvent: {}
+[11.344275] (-) TimerEvent: {}
+[11.444616] (-) TimerEvent: {}
+[11.544970] (-) TimerEvent: {}
+[11.645349] (-) TimerEvent: {}
+[11.745695] (-) TimerEvent: {}
+[11.846053] (-) TimerEvent: {}
+[11.946387] (-) TimerEvent: {}
+[12.046744] (-) TimerEvent: {}
+[12.147107] (-) TimerEvent: {}
+[12.247439] (-) TimerEvent: {}
+[12.347824] (-) TimerEvent: {}
+[12.448153] (-) TimerEvent: {}
+[12.548500] (-) TimerEvent: {}
+[12.648907] (-) TimerEvent: {}
+[12.749245] (-) TimerEvent: {}
+[12.849614] (-) TimerEvent: {}
+[12.950019] (-) TimerEvent: {}
+[13.050408] (-) TimerEvent: {}
+[13.150877] (-) TimerEvent: {}
+[13.251257] (-) TimerEvent: {}
+[13.351664] (-) TimerEvent: {}
+[13.452159] (-) TimerEvent: {}
+[13.552543] (-) TimerEvent: {}
+[13.652913] (-) TimerEvent: {}
+[13.753245] (-) TimerEvent: {}
+[13.839140] (serial_imu1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener1\x1b[0m\n'}
+[13.853379] (-) TimerEvent: {}
+[13.953778] (-) TimerEvent: {}
+[14.054227] (-) TimerEvent: {}
+[14.154598] (-) TimerEvent: {}
+[14.254956] (-) TimerEvent: {}
+[14.355323] (-) TimerEvent: {}
+[14.455687] (-) TimerEvent: {}
+[14.474496] (serial_imu1) StdoutLine: {'line': b'[100%] Built target listener1\n'}
+[14.490582] (serial_imu1) CommandEnded: {'returncode': 0}
+[14.534686] (serial_imu1) JobProgress: {'identifier': 'serial_imu1', 'progress': 'install'}
+[14.546218] (serial_imu1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1'], 'cwd': '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sajjad'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:/home/sajjad/Downloads/demo_ros2/install/custom_msg1/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('PICO_EXTRAS_PATH', '/home/sajjad/pico/pico-extras'), ('HOME', '/home/sajjad'), ('OLDPWD', '/home/sajjad/Downloads/demo_ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sajjad'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sajjad'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sajjad/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/i80pc108:@/tmp/.ICE-unix/1351,unix/i80pc108:/tmp/.ICE-unix/1351'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a9e1bcd_4112_4dc1_a443_5972b9370b37'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YN6DD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('PICO_EXAMPLES_PATH', '/home/sajjad/pico/pico-examples'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/install/custom_msg1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/sajjad/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_PLAYGROUND_PATH', '/home/sajjad/pico/pico-playground'), ('PYTHONPATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/install/custom_msg1/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/home/sajjad/Downloads/demo_ros2/install/pub_sub_custom_msg1:/home/sajjad/Downloads/demo_ros2/install/custom_msg1:/opt/ros/humble')]), 'shell': False}
+[14.555806] (-) TimerEvent: {}
+[14.557961] (serial_imu1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.558255] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/lib/serial_imu1/talker1\n'}
+[14.560517] (serial_imu1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/lib/serial_imu1/talker1" to ""\n'}
+[14.560772] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/lib/serial_imu1/listener1\n'}
+[14.565928] (serial_imu1) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/lib/serial_imu1/listener1" to ""\n'}
+[14.566221] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/launch\n'}
+[14.566365] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/launch/imu_spec_msg.launch.py\n'}
+[14.566589] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/ament_index/resource_index/package_run_dependencies/serial_imu1\n'}
+[14.566783] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/ament_index/resource_index/parent_prefix_path/serial_imu1\n'}
+[14.567138] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/environment/ament_prefix_path.sh\n'}
+[14.567371] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/environment/ament_prefix_path.dsv\n'}
+[14.567546] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/environment/path.sh\n'}
+[14.567799] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/environment/path.dsv\n'}
+[14.568050] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/local_setup.bash\n'}
+[14.568283] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/local_setup.sh\n'}
+[14.568561] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/local_setup.zsh\n'}
+[14.568791] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/local_setup.dsv\n'}
+[14.569018] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/package.dsv\n'}
+[14.569264] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/ament_index/resource_index/packages/serial_imu1\n'}
+[14.569571] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/cmake/serial_imu1Config.cmake\n'}
+[14.569724] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/cmake/serial_imu1Config-version.cmake\n'}
+[14.569977] (serial_imu1) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/serial_imu1/share/serial_imu1/package.xml\n'}
+[14.572157] (serial_imu1) CommandEnded: {'returncode': 0}
+[14.655968] (-) TimerEvent: {}
+[14.756451] (-) TimerEvent: {}
+[14.800854] (serial_imu1) JobEnded: {'identifier': 'serial_imu1', 'rc': 0}
+[14.801980] (-) EventReactorShutdown: {}

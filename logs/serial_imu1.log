@@ -1,0 +1,56 @@
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ ros2 launch serial_imu1 imu_spec_msg.launch.py
+[INFO] [launch]: All log files can be found below /home/sajjad/.ros/log/2023-10-28-04-58-13-486087-i80pc108-261557
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker1-1]: process started with pid [261558]
+[INFO] [listener1-2]: process started with pid [261560]
+[talker1-1] standard input is not a terminal device...
+[talker1-1] 
+[listener1-2] [INFO] [1698461895.068661791] [subscriber]: I got: 'Sat Oct 28 04:58:15 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698461895.069166290] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698461895.069249602] [subscriber]: 67305985
+[listener1-2] [INFO] [1698461895.069295278] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698461895.069335205] [subscriber]: 134678021
+[listener1-2] [INFO] [1698461897.074332434] [subscriber]: I got: 'Sat Oct 28 04:58:17 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698461897.074483687] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698461897.074537360] [subscriber]: 67305985
+[listener1-2] [INFO] [1698461897.074580187] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698461897.074620589] [subscriber]: 134678021
+[listener1-2] [INFO] [1698461899.078742508] [subscriber]: I got: 'Sat Oct 28 04:58:19 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698461899.078971934] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698461899.079030386] [subscriber]: 67305985
+[listener1-2] [INFO] [1698461899.079073848] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698461899.079214439] [subscriber]: 134678021
+[listener1-2] [INFO] [1698461901.084407084] [subscriber]: I got: 'Sat Oct 28 04:58:21 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698461901.084580951] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698461901.084642112] [subscriber]: 67305985
+[listener1-2] [INFO] [1698461901.084692588] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698461901.084743612] [subscriber]: 134678021
+[listener1-2] [INFO] [1698461903.088557840] [subscriber]: I got: 'Sat Oct 28 04:58:23 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698461903.088737430] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698461903.088800388] [subscriber]: 67305985
+[listener1-2] [INFO] [1698461903.088847403] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698461903.088887861] [subscriber]: 134678021
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[listener1-2] [INFO] [1698461904.925220854] [rclcpp]: signal_handler(signum=2)
+[talker1-1] [INFO] [1698461904.925234052] [rclcpp]: signal_handler(signum=2)
+[INFO] [talker1-1]: process has finished cleanly [pid 261558]
+[INFO] [listener1-2]: process has finished cleanly [pid 261560]
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ cd ..
+sajjad@i80pc108:~/Downloads/demo_ros2$ git add --all
+sajjad@i80pc108:~/Downloads/demo_ros2$ git commit -m "added ros2 messages examples for serial_imu and serial_test and serial_imu1 for serial board"
+sajjad@i80pc108:~/Downloads/demo_ros2$ git push --all
+Enumerating objects: 449, done.
+Counting objects: 100% (449/449), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (379/379), done.
+Writing objects: 100% (422/422), 2.96 MiB | 2.50 MiB/s, done.
+Total 422 (delta 207), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (207/207), completed with 14 local objects.
+To git+ssh://github.com/enggsajjad/demo_ros2.git
+   0297c73..4684856  main -> main
+sajjad@i80pc108:~/Downloads/demo_ros2$ 

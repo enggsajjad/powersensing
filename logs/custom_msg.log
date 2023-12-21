@@ -1,0 +1,310 @@
+ROS2 from the Ground Up: Part 3-A Hands-On Guide to Creating Custom Messages(.msg & .srv) and Turtlebot3 Service Node
+https://medium.com/@nullbyte.in/ros2-from-the-ground-up-part-3-a-hands-on-guide-to-creating-custom-messages-and-turtlebot3-service-96a68df2e670
+
+login....
+sajjad@i80pc108:~$ cd Downloads/demo_ros2/ros2_ws/src/
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ ros2 pkg create --build-type ament_cmake custom_msg --dependencies rclcpp std_msgs rosidl_default_generators
+going to create a new package
+package name: custom_msg
+destination directory: /home/sajjad/Downloads/demo_ros2/ros2_ws/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['sajjad <sajjad@todo.todo>']
+licenses: ['TODO: License declaration']
+build type: ament_cmake
+dependencies: ['rclcpp', 'std_msgs', 'rosidl_default_generators']
+creating folder ./custom_msg
+creating ./custom_msg/package.xml
+creating source and include folder
+creating folder ./custom_msg/src
+creating folder ./custom_msg/include/custom_msg
+creating ./custom_msg/CMakeLists.txt
+
+[WARNING]: Unknown license 'TODO: License declaration'.  This has been set in the package.xml, but no LICENSE file has been created.
+It is recommended to use one of the ament license identitifers:
+Apache-2.0
+BSL-1.0
+BSD-2.0
+BSD-2-Clause
+BSD-3-Clause
+GPL-3.0-only
+LGPL-3.0-only
+MIT
+MIT-0
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ mkdir -p custom_msg/msg/
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ vim custom_msg/msg/LogTf.msg
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ ls custom_msg/msg/
+LogTf.msg
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ ls
+custom_msg  my_robot_interfaces  ros2_msg
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ cd custom_msg/
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/custom_msg$ ls
+CMakeLists.txt  include  msg  package.xml  src
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/custom_msg$ rm -rf include src
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/custom_msg$ vim CMakeLists.txt 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/custom_msg$ vim package.xml 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/custom_msg$ vim CMakeLists.txt 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/custom_msg$ cd ..
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ cd ..
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ colcon build --packages-select custom_msg
+Starting >>> custom_msg
+Finished <<< custom_msg [5.81s]                     
+
+Summary: 1 package finished [7.04s]
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ source install/setup.sh 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ ros2 interface list | grep custom_msg
+    custom_msg/msg/LogTf
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ ros2 interface show custom_msg/msg/logTF
+Could not find the interface '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/share/custom_msg/msg/logTF.idl'
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ ros2 interface show custom_msg/msg/LogTF
+Could not find the interface '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/share/custom_msg/msg/LogTF.idl'
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ ros2 interface show custom_msg/msg/LogTf
+string time_frame
+string log_msg
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ cd src/
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ ros2 pkg create pub_sub_custom_msg --build-type ament_cmake --dependencies rclcpp std_msgs custom_msg
+going to create a new package
+package name: pub_sub_custom_msg
+destination directory: /home/sajjad/Downloads/demo_ros2/ros2_ws/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['sajjad <sajjad@todo.todo>']
+licenses: ['TODO: License declaration']
+build type: ament_cmake
+dependencies: ['rclcpp', 'std_msgs', 'custom_msg']
+creating folder ./pub_sub_custom_msg
+creating ./pub_sub_custom_msg/package.xml
+creating source and include folder
+creating folder ./pub_sub_custom_msg/src
+creating folder ./pub_sub_custom_msg/include/pub_sub_custom_msg
+creating ./pub_sub_custom_msg/CMakeLists.txt
+
+[WARNING]: Unknown license 'TODO: License declaration'.  This has been set in the package.xml, but no LICENSE file has been created.
+It is recommended to use one of the ament license identitifers:
+Apache-2.0
+BSL-1.0
+BSD-2.0
+BSD-2-Clause
+BSD-3-Clause
+GPL-3.0-only
+LGPL-3.0-only
+MIT
+MIT-0
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ vim pub_sub_custom_msg/src/pub.cpp
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ vim pub_sub_custom_msg/src/sub.cpp
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ cd pub_sub_custom_msg/
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg$ mkdir launch
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg$ vim launch/launch/pub_sub_launch.py
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg$ cd launch/
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg/launch$ vim pub_sub_launch.py
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg/launch$ cd ..
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg$ ls
+CMakeLists.txt  include  launch  package.xml  src
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg$ vim CMakeLists.txt 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg$ cd ..
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws/src$ cd ..
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ colcon build --packages-select pub_sub_custom_msg
+Starting >>> pub_sub_custom_msg
+--- stderr: pub_sub_custom_msg                             
+/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg/src/sub.cpp:7:10: fatal error: std_msgs/msg/string.hpp: No such file or directory
+    7 | #include "std_msgs/msg/string.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg/src/pub.cpp:11:10: fatal error: std_msgs/msg/string.hpp: No such file or directory
+   11 | #include "std_msgs/msg/string.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/publisher.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/subscriber.dir/build.make:76: CMakeFiles/subscriber.dir/src/sub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
+---
+Failed   <<< pub_sub_custom_msg [2.45s, exited with code 2]
+
+Summary: 0 packages finished [3.72s]
+  1 package failed: pub_sub_custom_msg
+  1 package had stderr output: pub_sub_custom_msg
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ vim src/pub_sub_custom_msg/CMakeLists.txt 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ colcon build --packages-select pub_sub_custom_msg
+Starting >>> pub_sub_custom_msg
+--- stderr: pub_sub_custom_msg                         
+CMake Error at CMakeLists.txt:23 (find_package):
+  By not providing "Findmap_messages.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "map_messages", but CMake did not find one.
+
+  Could not find a package configuration file provided by "map_messages" with
+  any of the following names:
+
+    map_messagesConfig.cmake
+    map_messages-config.cmake
+
+  Add the installation prefix of "map_messages" to CMAKE_PREFIX_PATH or set
+  "map_messages_DIR" to a directory containing one of the above files.  If
+  "map_messages" provides a separate development package or SDK, be sure it
+  has been installed.
+
+
+gmake: *** [Makefile:308: cmake_check_build_system] Error 1
+---
+Failed   <<< pub_sub_custom_msg [1.00s, exited with code 2]
+
+Summary: 0 packages finished [2.28s]
+  1 package failed: pub_sub_custom_msg
+  1 package had stderr output: pub_sub_custom_msg
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ vim src/pub_sub_custom_msg/CMakeLists.txt 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ colcon build --packages-select pub_sub_custom_msg
+Starting >>> pub_sub_custom_msg
+--- stderr: pub_sub_custom_msg                             
+/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg/src/sub.cpp:7:10: fatal error: std_msgs/msg/string.hpp: No such file or directory
+    7 | #include "std_msgs/msg/string.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg/src/pub.cpp:11:10: fatal error: std_msgs/msg/string.hpp: No such file or directory
+   11 | #include "std_msgs/msg/string.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/subscriber.dir/build.make:76: CMakeFiles/subscriber.dir/src/sub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/subscriber.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
+---
+Failed   <<< pub_sub_custom_msg [1.49s, exited with code 2]
+
+Summary: 0 packages finished [2.75s]
+  1 package failed: pub_sub_custom_msg
+  1 package had stderr output: pub_sub_custom_msg
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ colcon build --packages-select pub_sub_custom_msg
+Starting >>> pub_sub_custom_msg
+--- stderr: pub_sub_custom_msg                         
+CMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file 'msg/LogTf.msg' doesn't exist
+  relative to the CMAKE_CURRENT_SOURCE_DIR
+  '/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg'
+Call Stack (most recent call first):
+  CMakeLists.txt:45 (rosidl_generate_interfaces)
+
+
+gmake: *** [Makefile:308: cmake_check_build_system] Error 1
+---
+Failed   <<< pub_sub_custom_msg [1.08s, exited with code 2]
+
+Summary: 0 packages finished [2.34s]
+  1 package failed: pub_sub_custom_msg
+  1 package had stderr output: pub_sub_custom_msg
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ colcon build --packages-select pub_sub_custom_msg
+Starting >>> pub_sub_custom_msg
+Finished <<< pub_sub_custom_msg [12.1s]                       
+
+Summary: 1 package finished [13.4s]
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ source install/setup.sh 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ ros2 launch pub_sub_custom_msg pub_sub_launch.py 
+[INFO] [launch]: All log files can be found below /home/sajjad/.ros/log/2023-10-27-10-55-45-334274-i80pc108-51246
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [publisher-1]: process started with pid [51247]
+[INFO] [subscriber-2]: process started with pid [51249]
+[subscriber-2] [INFO] [1698396946.053655331] [subscriber]: I heard: 'Fri Oct 27 10:55:46 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396946.054196389] [subscriber]: Hello, world! 0
+[subscriber-2] [INFO] [1698396946.553511105] [subscriber]: I heard: 'Fri Oct 27 10:55:46 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396946.553705841] [subscriber]: Hello, world! 1
+[subscriber-2] [INFO] [1698396947.053512244] [subscriber]: I heard: 'Fri Oct 27 10:55:47 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396947.053716027] [subscriber]: Hello, world! 2
+[subscriber-2] [INFO] [1698396947.554464392] [subscriber]: I heard: 'Fri Oct 27 10:55:47 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396947.554695748] [subscriber]: Hello, world! 3
+[subscriber-2] [INFO] [1698396948.053479668] [subscriber]: I heard: 'Fri Oct 27 10:55:48 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396948.053691014] [subscriber]: Hello, world! 4
+[subscriber-2] [INFO] [1698396948.553475392] [subscriber]: I heard: 'Fri Oct 27 10:55:48 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396948.553680808] [subscriber]: Hello, world! 5
+[subscriber-2] [INFO] [1698396949.053475922] [subscriber]: I heard: 'Fri Oct 27 10:55:49 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396949.053696170] [subscriber]: Hello, world! 6
+[subscriber-2] [INFO] [1698396949.553609427] [subscriber]: I heard: 'Fri Oct 27 10:55:49 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396949.553791931] [subscriber]: Hello, world! 7
+[subscriber-2] [INFO] [1698396950.053460515] [subscriber]: I heard: 'Fri Oct 27 10:55:50 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396950.053647331] [subscriber]: Hello, world! 8
+[subscriber-2] [INFO] [1698396950.553487607] [subscriber]: I heard: 'Fri Oct 27 10:55:50 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396950.553668569] [subscriber]: Hello, world! 9
+[subscriber-2] [INFO] [1698396951.053623113] [subscriber]: I heard: 'Fri Oct 27 10:55:51 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396951.053912752] [subscriber]: Hello, world! 10
+[subscriber-2] [INFO] [1698396951.553495978] [subscriber]: I heard: 'Fri Oct 27 10:55:51 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396951.553674160] [subscriber]: Hello, world! 11
+[subscriber-2] [INFO] [1698396952.053510324] [subscriber]: I heard: 'Fri Oct 27 10:55:52 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396952.053744266] [subscriber]: Hello, world! 12
+[subscriber-2] [INFO] [1698396952.553476255] [subscriber]: I heard: 'Fri Oct 27 10:55:52 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396952.553681148] [subscriber]: Hello, world! 13
+[subscriber-2] [INFO] [1698396953.053418280] [subscriber]: I heard: 'Fri Oct 27 10:55:53 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396953.053606832] [subscriber]: Hello, world! 14
+[subscriber-2] [INFO] [1698396953.553508503] [subscriber]: I heard: 'Fri Oct 27 10:55:53 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396953.553746102] [subscriber]: Hello, world! 15
+[subscriber-2] [INFO] [1698396954.053506773] [subscriber]: I heard: 'Fri Oct 27 10:55:54 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396954.053702816] [subscriber]: Hello, world! 16
+[subscriber-2] [INFO] [1698396954.553508026] [subscriber]: I heard: 'Fri Oct 27 10:55:54 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396954.553709923] [subscriber]: Hello, world! 17
+[subscriber-2] [INFO] [1698396955.053488228] [subscriber]: I heard: 'Fri Oct 27 10:55:55 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396955.053701742] [subscriber]: Hello, world! 18
+[subscriber-2] [INFO] [1698396955.553405404] [subscriber]: I heard: 'Fri Oct 27 10:55:55 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396955.553567704] [subscriber]: Hello, world! 19
+[subscriber-2] [INFO] [1698396956.053537457] [subscriber]: I heard: 'Fri Oct 27 10:55:56 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396956.053730969] [subscriber]: Hello, world! 20
+[subscriber-2] [INFO] [1698396956.553473091] [subscriber]: I heard: 'Fri Oct 27 10:55:56 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396956.553733717] [subscriber]: Hello, world! 21
+[subscriber-2] [INFO] [1698396957.053661127] [subscriber]: I heard: 'Fri Oct 27 10:55:57 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396957.053856030] [subscriber]: Hello, world! 22
+[subscriber-2] [INFO] [1698396957.553503659] [subscriber]: I heard: 'Fri Oct 27 10:55:57 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396957.553719451] [subscriber]: Hello, world! 23
+[subscriber-2] [INFO] [1698396958.055507639] [subscriber]: I heard: 'Fri Oct 27 10:55:58 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396958.055852528] [subscriber]: Hello, world! 24
+[subscriber-2] [INFO] [1698396958.553610589] [subscriber]: I heard: 'Fri Oct 27 10:55:58 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396958.553927384] [subscriber]: Hello, world! 25
+[subscriber-2] [INFO] [1698396959.053584662] [subscriber]: I heard: 'Fri Oct 27 10:55:59 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396959.053799635] [subscriber]: Hello, world! 26
+[subscriber-2] [INFO] [1698396959.553593251] [subscriber]: I heard: 'Fri Oct 27 10:55:59 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396959.553839052] [subscriber]: Hello, world! 27
+[subscriber-2] [INFO] [1698396960.053545618] [subscriber]: I heard: 'Fri Oct 27 10:56:00 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396960.053791536] [subscriber]: Hello, world! 28
+[subscriber-2] [INFO] [1698396960.553629933] [subscriber]: I heard: 'Fri Oct 27 10:56:00 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396960.553892736] [subscriber]: Hello, world! 29
+[subscriber-2] [INFO] [1698396961.053519128] [subscriber]: I heard: 'Fri Oct 27 10:56:01 2023
+[subscriber-2] '
+[subscriber-2] [INFO] [1698396961.053764855] [subscriber]: Hello, world! 30
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[subscriber-2] [INFO] [1698396961.089717020] [rclcpp]: signal_handler(signum=2)
+[publisher-1] [INFO] [1698396961.089728823] [rclcpp]: signal_handler(signum=2)
+[INFO] [subscriber-2]: process has finished cleanly [pid 51249]
+[INFO] [publisher-1]: process has finished cleanly [pid 51247]
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ 

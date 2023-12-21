@@ -1,0 +1,32 @@
+[0.087s] Invoking command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1': AMENT_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/opt/ros/humble LD_LIBRARY_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1 -- -j4 -l4
+[0.153s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/pub.cpp.o[0m
+[0.153s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber.dir/src/sub.cpp.o[0m
+[5.983s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[6.273s] [ 75%] Built target publisher
+[10.758s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[11.309s] [100%] Built target subscriber
+[11.325s] Invoked command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1' returned '0': AMENT_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/opt/ros/humble LD_LIBRARY_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1 -- -j4 -l4
+[11.375s] Invoking command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1': AMENT_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/opt/ros/humble LD_LIBRARY_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1
+[11.386s] -- Install configuration: ""
+[11.386s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/publisher
+[11.388s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/publisher" to ""
+[11.388s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/subscriber
+[11.393s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/subscriber" to ""
+[11.393s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1//launch
+[11.394s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1//launch/pub_sub_launch.py
+[11.394s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/package_run_dependencies/pub_sub_custom_msg1
+[11.394s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/parent_prefix_path/pub_sub_custom_msg1
+[11.394s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/ament_prefix_path.sh
+[11.394s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/ament_prefix_path.dsv
+[11.394s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/path.sh
+[11.395s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/path.dsv
+[11.395s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.bash
+[11.395s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.sh
+[11.395s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.zsh
+[11.395s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.dsv
+[11.396s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/package.dsv
+[11.396s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/packages/pub_sub_custom_msg1
+[11.396s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/cmake/pub_sub_custom_msg1Config.cmake
+[11.396s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/cmake/pub_sub_custom_msg1Config-version.cmake
+[11.397s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/package.xml
+[11.399s] Invoked command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1' returned '0': AMENT_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/opt/ros/humble LD_LIBRARY_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1

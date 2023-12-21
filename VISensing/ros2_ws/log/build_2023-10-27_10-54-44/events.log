@@ -1,0 +1,190 @@
+[0.000000] (-) TimerEvent: {}
+[0.000190] (-) JobUnselected: {'identifier': 'custom_msg'}
+[0.000279] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.000396] (-) JobUnselected: {'identifier': 'ros2_msg'}
+[0.000555] (pub_sub_custom_msg) JobQueued: {'identifier': 'pub_sub_custom_msg', 'dependencies': OrderedDict([('custom_msg', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg')])}
+[0.000631] (pub_sub_custom_msg) JobStarted: {'identifier': 'pub_sub_custom_msg'}
+[0.097007] (pub_sub_custom_msg) JobProgress: {'identifier': 'pub_sub_custom_msg', 'progress': 'cmake'}
+[0.097801] (pub_sub_custom_msg) JobProgress: {'identifier': 'pub_sub_custom_msg', 'progress': 'build'}
+[0.098629] (pub_sub_custom_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg', '--', '-j4', '-l4'], 'cwd': '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sajjad'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('PICO_EXTRAS_PATH', '/home/sajjad/pico/pico-extras'), ('HOME', '/home/sajjad'), ('OLDPWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sajjad'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sajjad'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sajjad/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/i80pc108:@/tmp/.ICE-unix/1351,unix/i80pc108:/tmp/.ICE-unix/1351'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b5357f85_7149_4a4e_9c3d_f28c700c6614'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YN6DD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.186'), ('PICO_EXAMPLES_PATH', '/home/sajjad/pico/pico-examples'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/sajjad/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_PLAYGROUND_PATH', '/home/sajjad/pico/pico-playground'), ('PYTHONPATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.102025] (-) TimerEvent: {}
+[0.133973] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.202183] (-) TimerEvent: {}
+[0.302489] (-) TimerEvent: {}
+[0.314080] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.351919] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.355231] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.362832] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.376816] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.396386] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.402597] (-) TimerEvent: {}
+[0.471424] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.473234] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.502713] (-) TimerEvent: {}
+[0.603025] (-) TimerEvent: {}
+[0.621042] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.703175] (-) TimerEvent: {}
+[0.803478] (-) TimerEvent: {}
+[0.825531] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found custom_msg: 0.0.0 (/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/share/custom_msg/cmake)\n'}
+[0.847849] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.903579] (-) TimerEvent: {}
+[0.937106] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.938969] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.939202] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.939293] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.940438] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.940551] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.940946] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.941621] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.942101] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.943353] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.943473] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.943873] (pub_sub_custom_msg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.944805] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.963146] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.965289] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Build files have been written to: /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg\n'}
+[1.003694] (-) TimerEvent: {}
+[1.013782] (pub_sub_custom_msg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/publisher.dir/src/pub.cpp.o\x1b[0m\n'}
+[1.014044] (pub_sub_custom_msg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/subscriber.dir/src/sub.cpp.o\x1b[0m\n'}
+[1.103805] (-) TimerEvent: {}
+[1.204183] (-) TimerEvent: {}
+[1.304505] (-) TimerEvent: {}
+[1.404842] (-) TimerEvent: {}
+[1.505209] (-) TimerEvent: {}
+[1.605569] (-) TimerEvent: {}
+[1.705924] (-) TimerEvent: {}
+[1.806290] (-) TimerEvent: {}
+[1.906690] (-) TimerEvent: {}
+[2.007050] (-) TimerEvent: {}
+[2.107397] (-) TimerEvent: {}
+[2.207757] (-) TimerEvent: {}
+[2.308124] (-) TimerEvent: {}
+[2.408478] (-) TimerEvent: {}
+[2.508831] (-) TimerEvent: {}
+[2.609208] (-) TimerEvent: {}
+[2.709567] (-) TimerEvent: {}
+[2.809928] (-) TimerEvent: {}
+[2.910281] (-) TimerEvent: {}
+[3.010687] (-) TimerEvent: {}
+[3.111060] (-) TimerEvent: {}
+[3.211427] (-) TimerEvent: {}
+[3.311822] (-) TimerEvent: {}
+[3.412192] (-) TimerEvent: {}
+[3.512557] (-) TimerEvent: {}
+[3.612915] (-) TimerEvent: {}
+[3.713280] (-) TimerEvent: {}
+[3.813735] (-) TimerEvent: {}
+[3.914117] (-) TimerEvent: {}
+[4.014494] (-) TimerEvent: {}
+[4.114889] (-) TimerEvent: {}
+[4.215257] (-) TimerEvent: {}
+[4.315631] (-) TimerEvent: {}
+[4.416008] (-) TimerEvent: {}
+[4.516362] (-) TimerEvent: {}
+[4.617855] (-) TimerEvent: {}
+[4.718212] (-) TimerEvent: {}
+[4.818573] (-) TimerEvent: {}
+[4.918954] (-) TimerEvent: {}
+[5.019326] (-) TimerEvent: {}
+[5.119677] (-) TimerEvent: {}
+[5.220060] (-) TimerEvent: {}
+[5.320456] (-) TimerEvent: {}
+[5.420801] (-) TimerEvent: {}
+[5.521155] (-) TimerEvent: {}
+[5.621510] (-) TimerEvent: {}
+[5.721860] (-) TimerEvent: {}
+[5.822203] (-) TimerEvent: {}
+[5.922558] (-) TimerEvent: {}
+[6.022943] (-) TimerEvent: {}
+[6.123305] (-) TimerEvent: {}
+[6.223657] (-) TimerEvent: {}
+[6.324051] (-) TimerEvent: {}
+[6.424457] (-) TimerEvent: {}
+[6.524820] (-) TimerEvent: {}
+[6.625186] (-) TimerEvent: {}
+[6.725541] (-) TimerEvent: {}
+[6.739426] (pub_sub_custom_msg) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable publisher\x1b[0m\n'}
+[6.825662] (-) TimerEvent: {}
+[6.926063] (-) TimerEvent: {}
+[7.026416] (-) TimerEvent: {}
+[7.036032] (pub_sub_custom_msg) StdoutLine: {'line': b'[ 75%] Built target publisher\n'}
+[7.126530] (-) TimerEvent: {}
+[7.226894] (-) TimerEvent: {}
+[7.327273] (-) TimerEvent: {}
+[7.427650] (-) TimerEvent: {}
+[7.528099] (-) TimerEvent: {}
+[7.628472] (-) TimerEvent: {}
+[7.728824] (-) TimerEvent: {}
+[7.829164] (-) TimerEvent: {}
+[7.929518] (-) TimerEvent: {}
+[8.029875] (-) TimerEvent: {}
+[8.130215] (-) TimerEvent: {}
+[8.230565] (-) TimerEvent: {}
+[8.330945] (-) TimerEvent: {}
+[8.431280] (-) TimerEvent: {}
+[8.531623] (-) TimerEvent: {}
+[8.631968] (-) TimerEvent: {}
+[8.732319] (-) TimerEvent: {}
+[8.832656] (-) TimerEvent: {}
+[8.933004] (-) TimerEvent: {}
+[9.033355] (-) TimerEvent: {}
+[9.133735] (-) TimerEvent: {}
+[9.234077] (-) TimerEvent: {}
+[9.334417] (-) TimerEvent: {}
+[9.434782] (-) TimerEvent: {}
+[9.535126] (-) TimerEvent: {}
+[9.635474] (-) TimerEvent: {}
+[9.735807] (-) TimerEvent: {}
+[9.836151] (-) TimerEvent: {}
+[9.936492] (-) TimerEvent: {}
+[10.036823] (-) TimerEvent: {}
+[10.137161] (-) TimerEvent: {}
+[10.237493] (-) TimerEvent: {}
+[10.337839] (-) TimerEvent: {}
+[10.438211] (-) TimerEvent: {}
+[10.538556] (-) TimerEvent: {}
+[10.638972] (-) TimerEvent: {}
+[10.739343] (-) TimerEvent: {}
+[10.839669] (-) TimerEvent: {}
+[10.939993] (-) TimerEvent: {}
+[11.040305] (-) TimerEvent: {}
+[11.140651] (-) TimerEvent: {}
+[11.240985] (-) TimerEvent: {}
+[11.252843] (pub_sub_custom_msg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable subscriber\x1b[0m\n'}
+[11.341141] (-) TimerEvent: {}
+[11.441546] (-) TimerEvent: {}
+[11.541874] (-) TimerEvent: {}
+[11.642172] (-) TimerEvent: {}
+[11.742488] (-) TimerEvent: {}
+[11.789451] (pub_sub_custom_msg) StdoutLine: {'line': b'[100%] Built target subscriber\n'}
+[11.804337] (pub_sub_custom_msg) CommandEnded: {'returncode': 0}
+[11.842593] (-) TimerEvent: {}
+[11.847118] (pub_sub_custom_msg) JobProgress: {'identifier': 'pub_sub_custom_msg', 'progress': 'install'}
+[11.859003] (pub_sub_custom_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg'], 'cwd': '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sajjad'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg/lib:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('PICO_EXTRAS_PATH', '/home/sajjad/pico/pico-extras'), ('HOME', '/home/sajjad'), ('OLDPWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sajjad'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sajjad'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sajjad/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/i80pc108:@/tmp/.ICE-unix/1351,unix/i80pc108:/tmp/.ICE-unix/1351'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b5357f85_7149_4a4e_9c3d_f28c700c6614'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YN6DD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.186'), ('PICO_EXAMPLES_PATH', '/home/sajjad/pico/pico-examples'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/sajjad/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_PLAYGROUND_PATH', '/home/sajjad/pico/pico-playground'), ('PYTHONPATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/ros2_msg:/home/sajjad/Downloads/demo_ros2/ros2_ws/install/my_robot_interfaces:/opt/ros/humble')]), 'shell': False}
+[11.870904] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.871301] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/lib/pub_sub_custom_msg/publisher\n'}
+[11.873335] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/lib/pub_sub_custom_msg/publisher" to ""\n'}
+[11.873673] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/lib/pub_sub_custom_msg/subscriber\n'}
+[11.878728] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/lib/pub_sub_custom_msg/subscriber" to ""\n'}
+[11.878920] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg//launch\n'}
+[11.879106] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg//launch/pub_sub_launch.py\n'}
+[11.879318] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/ament_index/resource_index/package_run_dependencies/pub_sub_custom_msg\n'}
+[11.879594] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/ament_index/resource_index/parent_prefix_path/pub_sub_custom_msg\n'}
+[11.879875] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/environment/ament_prefix_path.sh\n'}
+[11.880085] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/environment/ament_prefix_path.dsv\n'}
+[11.880291] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/environment/path.sh\n'}
+[11.880457] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/environment/path.dsv\n'}
+[11.880669] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/local_setup.bash\n'}
+[11.880892] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/local_setup.sh\n'}
+[11.881157] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/local_setup.zsh\n'}
+[11.881361] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/local_setup.dsv\n'}
+[11.881540] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/package.dsv\n'}
+[11.881846] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/ament_index/resource_index/packages/pub_sub_custom_msg\n'}
+[11.882139] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/cmake/pub_sub_custom_msgConfig.cmake\n'}
+[11.882350] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/cmake/pub_sub_custom_msgConfig-version.cmake\n'}
+[11.882537] (pub_sub_custom_msg) StdoutLine: {'line': b'-- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg/share/pub_sub_custom_msg/package.xml\n'}
+[11.884943] (pub_sub_custom_msg) CommandEnded: {'returncode': 0}
+[11.942863] (-) TimerEvent: {}
+[12.048017] (-) TimerEvent: {}
+[12.111507] (pub_sub_custom_msg) JobEnded: {'identifier': 'pub_sub_custom_msg', 'rc': 0}
+[12.112434] (-) EventReactorShutdown: {}

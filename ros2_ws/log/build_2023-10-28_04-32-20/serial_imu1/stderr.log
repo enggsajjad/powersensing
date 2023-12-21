@@ -1,0 +1,55 @@
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/ch_serial.c:[m[K In function ‘[01m[Kparse_data[m[K’:
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/ch_serial.c:48:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   48 |     int ofs = 0, [01;35m[Ki[m[K = 0;
+      |                  [01;35m[K^[m[K
+At top level:
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/ch_serial.c:21:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KR4[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   21 | static float    [01;35m[KR4[m[K(uint8_t *p) {float    r; memcpy(&r,p,4); return r;}
+      |                 [01;35m[K^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:13[m[K:
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:[m[K In member function ‘[01m[Kvoid SubscriberNode::callback(custom_msg1::msg::LogTf_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:46:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_volt_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |       RCLCPP_INFO(this->get_logger(), [01;35m[K"%d"[m[K, [32m[Kmsg->volt[m[K); //change
+      |                                       [01;35m[K^~~~[m[K  [32m[K~~~~~~~~~[m[K
+      |                                                  [32m[K|[m[K
+      |                                                  [32m[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_volt_type {aka long int}[m[K
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:46:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   46 |       RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K", msg->volt); //change
+      |                                        [01;36m[K~^[m[K
+      |                                         [01;36m[K|[m[K
+      |                                         [01;36m[Kint[m[K
+      |                                        [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:13[m[K:
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:48:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_amp_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |       RCLCPP_INFO(this->get_logger(), [01;35m[K"%d"[m[K, [32m[Kmsg->amp[m[K); //change
+      |                                       [01;35m[K^~~~[m[K  [32m[K~~~~~~~~[m[K
+      |                                                  [32m[K|[m[K
+      |                                                  [32m[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_amp_type {aka long int}[m[K
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/serial_imu1/src/sub_spec.cpp:48:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   48 |       RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K", msg->amp); //change
+      |                                        [01;36m[K~^[m[K
+      |                                         [01;36m[K|[m[K
+      |                                         [01;36m[Kint[m[K
+      |                                        [32m[K%ld[m[K

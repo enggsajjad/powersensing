@@ -1,0 +1,397 @@
+login....
+sajjad@i80pc108:~$ cd Downloads/demo_ros2/ros2_ws/
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ source install/setup.sh 
+sajjad@i80pc108:~/Downloads/demo_ros2/ros2_ws$ ros2 launch serial_imu1 imu_spec_msg.launch.py
+[INFO] [launch]: All log files can be found below /home/sajjad/.ros/log/2023-10-29-02-23-04-695087-i80pc108-11606
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker1-1]: process started with pid [11607]
+[INFO] [listener1-2]: process started with pid [11609]
+[talker1-1] standard input is not a terminal device...
+[talker1-1] 
+[listener1-2] [INFO] [1698538985.221582402] [subscriber]: I got: 'Sun Oct 29 02:23:05 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538985.222144694] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538985.222251751] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538985.222348645] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538985.222421320] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538985.331429815] [subscriber]: I got: 'Sun Oct 29 02:23:05 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538985.331704293] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538985.331793450] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538985.331866241] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538985.331935502] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538985.447548814] [subscriber]: I got: 'Sun Oct 29 02:23:05 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538985.447796731] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538985.447888865] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538985.447957998] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538985.448023168] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538985.559581932] [subscriber]: I got: 'Sun Oct 29 02:23:05 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538985.559777256] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538985.559856474] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538985.559931568] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538985.559994735] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538985.669488674] [subscriber]: I got: 'Sun Oct 29 02:23:05 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538985.669674337] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538985.669755382] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538985.669831249] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538985.669893720] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538985.781524277] [subscriber]: I got: 'Sun Oct 29 02:23:05 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538985.781717868] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538985.781802714] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538985.781873687] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538985.781936568] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538985.891594049] [subscriber]: I got: 'Sun Oct 29 02:23:05 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538985.891781236] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538985.891856300] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538985.891982479] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538985.892053332] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.003647293] [subscriber]: I got: 'Sun Oct 29 02:23:05 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.003845514] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.003925900] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.004001958] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.004064097] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.113460432] [subscriber]: I got: 'Sun Oct 29 02:23:06 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.113643384] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.113725863] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.113792744] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.113856205] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.225594745] [subscriber]: I got: 'Sun Oct 29 02:23:06 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.225741717] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.225792882] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.225840990] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.225881679] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.335795349] [subscriber]: I got: 'Sun Oct 29 02:23:06 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.335955149] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.336006013] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.336049772] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.336090232] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.447597217] [subscriber]: I got: 'Sun Oct 29 02:23:06 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.447812049] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.447867558] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.447911050] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.447952590] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.559408051] [subscriber]: I got: 'Sun Oct 29 02:23:06 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.559644099] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.559698647] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.559743397] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.559785820] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.669503808] [subscriber]: I got: 'Sun Oct 29 02:23:06 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.669825856] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.669903808] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.669948273] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.669989635] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.781480384] [subscriber]: I got: 'Sun Oct 29 02:23:06 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.781625770] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.781675956] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.781719943] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.781761877] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538986.891570447] [subscriber]: I got: 'Sun Oct 29 02:23:06 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538986.891748926] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538986.891823538] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538986.891899905] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538986.892018741] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.004639578] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.004849786] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.004974815] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.005091813] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.005204536] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.113130524] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.113173441] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.113184235] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.113194220] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.113205749] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.225470315] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.225619448] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.225669732] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.225711782] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.225752166] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.335737025] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.335902504] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.335957031] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.336000240] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.336040261] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.451630382] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.451858946] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.451957819] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.452007096] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.452050159] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.563786755] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.563953992] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.564008401] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.564052332] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.564094748] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.673514291] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.673681260] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.673746951] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.673802445] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.673852409] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.783732942] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.783903049] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.783966055] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.784012328] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.784056089] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538987.895675237] [subscriber]: I got: 'Sun Oct 29 02:23:07 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538987.895845694] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538987.895907145] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538987.896028009] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538987.896075687] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.007716944] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.007893361] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.007959013] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.008052131] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.008105365] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.117529855] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.117697931] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.117878027] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.117940583] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.117985487] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.227709688] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.227885479] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.227938435] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.227983111] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.228071273] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.339569201] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.339738750] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.339802888] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.339849596] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.339892428] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.449520480] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.449794622] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.449861813] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.449908236] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.449950257] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.561464528] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.561614145] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.561667167] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.561712819] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.561756117] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.671578118] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.671741805] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.671825116] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.671915355] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.671965502] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.783686690] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.783851485] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.783913172] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.783958523] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.784000520] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538988.893541302] [subscriber]: I got: 'Sun Oct 29 02:23:08 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538988.893723166] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538988.893782799] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538988.893920662] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538988.893971013] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.005497852] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.005792206] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.005883200] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.005930706] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.005974256] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.115812804] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.115977978] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.116031651] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.116077311] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.116118912] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.227611371] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.227779422] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.227842943] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.227889407] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.227933810] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.339787991] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.339957976] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.340013753] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.340059194] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.340105861] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.453501750] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.453668944] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.453732122] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.453779250] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.453822021] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.565751117] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.565953488] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.566185916] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.566371833] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.566447552] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.675736958] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.675989410] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.676086172] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.676161368] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.676227068] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.787566358] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.787759057] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.787837744] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.787911485] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.787977256] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538989.899784704] [subscriber]: I got: 'Sun Oct 29 02:23:09 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538989.899982164] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538989.900061969] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538989.900138927] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538989.900204866] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.009511616] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.009717231] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.009813324] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.009893701] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.009958667] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.119805678] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.119971213] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.120024728] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.120070244] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.120112228] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.231576944] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.231745905] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.231811003] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.231957975] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.232005844] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.343786801] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.343985169] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.344062884] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.344137563] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.344203092] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.452914185] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.452966724] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.452984414] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.453000080] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.453017078] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.563833952] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.564001660] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.564053785] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.564098466] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.564140620] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.675673291] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.675841018] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.675902124] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.675947079] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.675988880] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.787760908] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.787928122] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.787987999] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.788034101] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.788076571] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538990.897502795] [subscriber]: I got: 'Sun Oct 29 02:23:10 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538990.897667877] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538990.897804595] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538990.897860484] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538990.897903352] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.007577061] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.007845964] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.007907443] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.008041254] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.008096943] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.119656747] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.119822923] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.119935837] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.119988495] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.120034560] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.229530003] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.229696878] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.229762822] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.229816867] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.229861482] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.341515995] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.341684179] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.341749321] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.341804502] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.341851078] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.457531252] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.457699038] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.457761455] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.457815316] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.457864101] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.567567284] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.567738350] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.567800119] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.567848286] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.567936683] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.679553668] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.679722764] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.679786989] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.679836077] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.679878692] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.789501384] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.789664842] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.789840852] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.789894175] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.789940084] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538991.901486075] [subscriber]: I got: 'Sun Oct 29 02:23:11 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538991.901701188] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538991.901804187] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538991.901883439] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538991.901948373] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538992.011384326] [subscriber]: I got: 'Sun Oct 29 02:23:12 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538992.011619535] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538992.011677041] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538992.011723493] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538992.011767799] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538992.123558547] [subscriber]: I got: 'Sun Oct 29 02:23:12 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538992.123724495] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538992.123785165] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538992.123835380] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538992.123877037] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538992.233620438] [subscriber]: I got: 'Sun Oct 29 02:23:12 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538992.233790196] [subscriber]: Voltage Sensor: 0
+[listener1-2] [INFO] [1698538992.233848489] [subscriber]: 1076895745
+[listener1-2] [INFO] [1698538992.233893571] [subscriber]: Current Sensor: 0
+[listener1-2] [INFO] [1698538992.233936111] [subscriber]: 134678021
+[listener1-2] [INFO] [1698538992.344913348] [subscriber]: I got: 'Sun Oct 29 02:23:12 2023
+[listener1-2] '
+[listener1-2] [INFO] [1698538992.344966694] [subscriber]: Voltage Sensor: 0

@@ -1,0 +1,105 @@
+sajjad@i80pc108:~/Downloads/demo_ros2$ mkdir -p ./serial_test/src && cd ./serial_test/ && colcon build
+                     
+Summary: 0 packages finished [1.18s]
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_test$ cd src/
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_test/src$ ros2 pkg create serial_imu --build-type ament_cmake
+going to create a new package
+package name: serial_imu
+destination directory: /home/sajjad/Downloads/demo_ros2/serial_test/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['sajjad <sajjad@todo.todo>']
+licenses: ['TODO: License declaration']
+build type: ament_cmake
+dependencies: []
+creating folder ./serial_imu
+creating ./serial_imu/package.xml
+creating source and include folder
+creating folder ./serial_imu/src
+creating folder ./serial_imu/include/serial_imu
+creating ./serial_imu/CMakeLists.txt
+
+[WARNING]: Unknown license 'TODO: License declaration'.  This has been set in the package.xml, but no LICENSE file has been created.
+It is recommended to use one of the ament license identitifers:
+Apache-2.0
+BSL-1.0
+BSD-2.0
+BSD-2-Clause
+BSD-3-Clause
+GPL-3.0-only
+LGPL-3.0-only
+MIT
+MIT-0
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_test/src$ cd ..
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_test$ copy the files^C
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_test$ colcon build
+Starting >>> serial_imu
+Finished <<< serial_imu [13.9s]                       
+
+Summary: 1 package finished [15.1s]
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_test$ source ./install/setup.sh 
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_test$ ros2 launch serial_imu imu_spec_msg.launch.py
+[INFO] [launch]: All log files can be found below /home/sajjad/.ros/log/2023-10-26-10-59-25-683642-i80pc108-36647
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [36648]
+[INFO] [listener-2]: process started with pid [36650]
+[talker-1] standard input is not a terminal device...
+[talker-1] 
+[talker-1] KItemIMUSOL
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698310766
+[listener-2] 	  nanosecs:238488728
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.000000000000000000
+[listener-2] 	y: 0.000000000000000000
+[listener-2] 	z: 0.000000000000000000
+[listener-2] 	w: 0.000000000000000000
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: 0.000000000000000000
+[listener-2] 	y: 0.000000000000000000
+[listener-2] 	z: 0.000000000000000000
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 0.000000000000000000
+[listener-2] 	y: 0.000000000000000000
+[listener-2] 	z: 0.000000000000000000
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+[talker-1] KItemIMUSOL
+[listener-2] header:
+[listener-2] 	stamp:
+[listener-2] 	  secs:1698310768
+[listener-2] 	  nanosecs:244573581
+[listener-2] 	frame_id:base_link
+[listener-2] orientation:
+[listener-2] 	x: 0.000000000000000000
+[listener-2] 	y: 0.000000000000000000
+[listener-2] 	z: 0.000000000000000000
+[listener-2] 	w: 0.000000000000000000
+[listener-2] orientation_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] angular_velocity: 
+[listener-2] 	x: 0.000000000000000000
+[listener-2] 	y: 0.000000000000000000
+[listener-2] 	z: 0.000000000000000000
+[listener-2] angular_velocity_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] linear_acceleration:
+[listener-2] 	x: 0.000000000000000000
+[listener-2] 	y: 0.000000000000000000
+[listener-2] 	z: 0.000000000000000000
+[listener-2] linear_acceleration_covariance: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[listener-2] ---
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[talker-1] [INFO] [1698310769.461649549] [rclcpp]: signal_handler(signum=2)
+[listener-2] [INFO] [1698310769.461651100] [rclcpp]: signal_handler(signum=2)
+[listener-2] cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+[listener-2] [ERROR] [1698310769.584243020] [imu_sub.rclcpp]: Error in destruction of rcl subscription handle: Failed to delete datareader, at ./src/subscription.cpp:52, at ./src/rcl/subscription.c:183
+[listener-2] cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+[listener-2] Fail in delete datareader, at ./src/rmw_service.cpp:104 during '__function__'
+[INFO] [talker-1]: process has finished cleanly [pid 36648]
+[ERROR] [listener-2]: process has died [pid 36650, exit code -11, cmd '/home/sajjad/Downloads/demo_ros2/serial_test/install/serial_imu/lib/serial_imu/listener --ros-args'].
+sajjad@i80pc108:~/Downloads/demo_ros2/serial_test$ 
+

@@ -1,0 +1,81 @@
+[0.090s] Invoking command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1': AMENT_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/opt/ros/humble LD_LIBRARY_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1 -- -j4 -l4
+[0.144s] [35m[1mConsolidate compiler generated dependencies of target subscriber[0m
+[0.145s] [35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[0.169s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/pub.cpp.o[0m
+[0.169s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber.dir/src/sub.cpp.o[0m
+[3.323s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.325s]                  from [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/sub.cpp:6[m[K:
+[3.325s] [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/sub.cpp:[m[K In member function ‘[01m[Kvoid SubscriberNode::callback(custom_msg1::msg::LogTf_<std::allocator<void> >::SharedPtr) const[m[K’:
+[3.326s] [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/sub.cpp:35:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_volt_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.326s]    35 |       RCLCPP_INFO(this->get_logger(), [01;35m[K"%d"[m[K, [32m[Kmsg->volt[m[K); //change
+[3.326s]       |                                       [01;35m[K^~~~[m[K  [32m[K~~~~~~~~~[m[K
+[3.326s]       |                                                  [32m[K|[m[K
+[3.326s]       |                                                  [32m[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_volt_type {aka long int}[m[K
+[3.326s] [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/sub.cpp:35:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.326s]    35 |       RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K", msg->volt); //change
+[3.326s]       |                                        [01;36m[K~^[m[K
+[3.327s]       |                                         [01;36m[K|[m[K
+[3.327s]       |                                         [01;36m[Kint[m[K
+[3.327s]       |                                        [32m[K%ld[m[K
+[3.327s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.329s]                  from [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/sub.cpp:6[m[K:
+[3.329s] [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/sub.cpp:37:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_amp_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.329s]    37 |       RCLCPP_INFO(this->get_logger(), [01;35m[K"%d"[m[K, [32m[Kmsg->amp[m[K); //change
+[3.329s]       |                                       [01;35m[K^~~~[m[K  [32m[K~~~~~~~~[m[K
+[3.329s]       |                                                  [32m[K|[m[K
+[3.329s]       |                                                  [32m[Kcustom_msg1::msg::LogTf_<std::allocator<void> >::_amp_type {aka long int}[m[K
+[3.329s] [01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/sub.cpp:37:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.330s]    37 |       RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K", msg->amp); //change
+[3.330s]       |                                        [01;36m[K~^[m[K
+[3.330s]       |                                         [01;36m[K|[m[K
+[3.330s]       |                                         [01;36m[Kint[m[K
+[3.330s]       |                                        [32m[K%ld[m[K
+[5.992s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[6.297s] [ 75%] Built target publisher
+[10.685s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[11.238s] [100%] Built target subscriber
+[11.253s] Invoked command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1' returned '0': AMENT_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/opt/ros/humble LD_LIBRARY_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1 -- -j4 -l4
+[11.306s] Invoking command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1': AMENT_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/opt/ros/humble LD_LIBRARY_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1
+[11.316s] -- Install configuration: ""
+[11.316s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/publisher
+[11.319s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/publisher" to ""
+[11.319s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/subscriber
+[11.325s] -- Set runtime path of "/home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/lib/pub_sub_custom_msg1/subscriber" to ""
+[11.325s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1//launch
+[11.325s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1//launch/pub_sub_launch.py
+[11.325s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/package_run_dependencies/pub_sub_custom_msg1
+[11.326s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/parent_prefix_path/pub_sub_custom_msg1
+[11.326s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/ament_prefix_path.sh
+[11.326s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/ament_prefix_path.dsv
+[11.326s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/path.sh
+[11.326s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/environment/path.dsv
+[11.326s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.bash
+[11.326s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.sh
+[11.326s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.zsh
+[11.327s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/local_setup.dsv
+[11.327s] -- Installing: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/package.dsv
+[11.327s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/ament_index/resource_index/packages/pub_sub_custom_msg1
+[11.327s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/cmake/pub_sub_custom_msg1Config.cmake
+[11.327s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/cmake/pub_sub_custom_msg1Config-version.cmake
+[11.327s] -- Up-to-date: /home/sajjad/Downloads/demo_ros2/ros2_ws/install/pub_sub_custom_msg1/share/pub_sub_custom_msg1/package.xml
+[11.329s] Invoked command in '/home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1' returned '0': AMENT_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1:/opt/ros/humble LD_LIBRARY_PATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sajjad/Downloads/demo_ros2/ros2_ws/install/custom_msg1/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sajjad/Downloads/demo_ros2/ros2_ws/build/pub_sub_custom_msg1

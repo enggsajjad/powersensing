@@ -1,0 +1,11 @@
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/uninstall.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/serial_test_uninstall.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/talker.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/listener.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/test.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/edit_cache.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/rebuild_cache.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/list_install_components.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/install.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/install/local.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_test/CMakeFiles/install/strip.dir

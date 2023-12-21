@@ -1,0 +1,4 @@
+source;share/pub_sub_custom_msg/local_setup.bash
+source;share/pub_sub_custom_msg/local_setup.dsv
+source;share/pub_sub_custom_msg/local_setup.sh
+source;share/pub_sub_custom_msg/local_setup.zsh

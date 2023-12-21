@@ -1,0 +1,11 @@
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/uninstall.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/serial_imu1_uninstall.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/talker1.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/listener1.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/test.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/edit_cache.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/rebuild_cache.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/list_install_components.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/install.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/install/local.dir
+/home/sajjad/Downloads/demo_ros2/ros2_ws/build/serial_imu1/CMakeFiles/install/strip.dir

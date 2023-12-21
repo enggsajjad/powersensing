@@ -1,0 +1,14 @@
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/pub.cpp:14:10:[m[K [01;31m[Kfatal error: [m[Kcustom_msg/msg/log_tf.hpp: No such file or directory
+   14 | #include [01;31m[K"custom_msg/msg/log_tf.hpp"[m[K    // Change
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sajjad/Downloads/demo_ros2/ros2_ws/src/pub_sub_custom_msg1/src/sub.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kcustom_msg/msg/log_tf.hpp: No such file or directory
+   10 | #include [01;31m[K"custom_msg/msg/log_tf.hpp"[m[K //change
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/publisher.dir/build.make:76: CMakeFiles/publisher.dir/src/pub.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/subscriber.dir/build.make:76: CMakeFiles/subscriber.dir/src/sub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/publisher.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
